@@ -7,32 +7,26 @@ let Transport = React.createClass({
   mixins: [Navigation, State],
   setRoot (root) {
     let path = this.getPath().split('/')
-    path[2] = root
+    path[1] = root
     this.transitionTo(path.join('/'))
   },
   render () {
-    let root = this.props.params.root
-    if (!/[ABCDEFG]/.test(root)) {
-      this.setRoot('C')
-      return <div />
-    } else {
-      let changeRoot = (e) => { this.setRoot(e.target.innerHTML) }
-      let notes = NOTES.map((note) => {
-        return <div className='item' key={note} onClick={changeRoot}>{note}</div>
-      })
-      return (
-        <div>
-          <div className='ui bottom fixed menu'>
-            <div className='ui container'>
-              {notes}
-            </div>
-          </div>
-          <div className='ui main text container'>
-            <RouteHandler/>
+    let path = this.getPath()
+    let root = this.props.root
+    let notes = NOTES.map((note) => {
+      let href = '#/' + note + path.slice(2)
+      return <a href={href} className='item' key={note}>{note}</a>
+    })
+    return (
+      <div>
+        <div className='ui bottom fixed menu'>
+          <div className='ui container'>
+            <div className='header item'>Root:</div>
+            {notes}
           </div>
         </div>
-      )
-    }
+      </div>
+    )
   }
 })
 

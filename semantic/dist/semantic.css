@@ -1,0 +1,5841 @@
+ /*
+ * # Semantic UI - x.x
+ * https://github.com/Semantic-Org/Semantic-UI
+ * http://www.semantic-ui.com/
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+/*!
+ * # Semantic UI x.x - Reset
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Reset
+*******************************/
+
+/* Border-Box */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* iPad Input Shadows */
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* mobile firefox too! */
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*******************************
+         Site Overrides
+*******************************/
+/*!
+ * # Semantic UI x.x - Site
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Page
+*******************************/
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #ffffff;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+  font-smoothing: antialiased;
+}
+
+/*******************************
+             Headers
+*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.2857em;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  font-weight: bold;
+  padding: 0em;
+}
+
+h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.714rem;
+}
+
+h3 {
+  font-size: 1.28rem;
+}
+
+h4 {
+  font-size: 1.071rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0em;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0em;
+}
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: 0em 0em 1em;
+  line-height: 1.4285em;
+}
+
+p:first-child {
+  margin-top: 0em;
+}
+
+p:last-child {
+  margin-bottom: 0em;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1e70bf;
+  text-decoration: none;
+}
+
+/*******************************
+          Highlighting
+*******************************/
+
+/* Site */
+
+::-webkit-selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+::-moz-selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+::selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Form */
+
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/*******************************
+        Global Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+/*!
+ * # Semantic UI x.x - Container
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Container
+*******************************/
+
+/* All Sizes */
+
+.ui.container {
+  display: block;
+  max-width: 100% !important;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  .ui.container {
+    width: auto;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+
+  .ui.grid.container {
+    width: auto !important;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.container {
+    width: 723px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .ui.grid.container {
+    width: calc( 723px  +  2em ) !important;
+  }
+}
+
+/* Small Monitor */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ui.container {
+    width: 933px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .ui.grid.container {
+    width: calc( 933px  +  2em ) !important;
+  }
+}
+
+/* Large Monitor */
+
+@media only screen and (min-width: 1200px) {
+  .ui.container {
+    width: 1127px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .ui.grid.container {
+    width: calc( 1127px  +  2em ) !important;
+  }
+}
+
+/*******************************
+             Types
+*******************************/
+
+/* Text Container */
+
+.ui.text.container {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  max-width: 700px !important;
+  line-height: 1.5;
+}
+
+.ui.text.container {
+  font-size: 1.14285714rem;
+}
+
+/* Fluid */
+
+.ui.fluid.container {
+  width: 100%;
+}
+
+/*******************************
+           Variations
+*******************************/
+
+.ui[class*="left aligned"].container {
+  text-align: left;
+}
+
+.ui[class*="center aligned"].container {
+  text-align: center;
+}
+
+.ui[class*="right aligned"].container {
+  text-align: right;
+}
+
+.ui.justified.container {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+/*!
+ * # Semantic UI x.x - Grid
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+.ui.grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 0em;
+}
+
+/*----------------------
+      Remove Gutters
+-----------------------*/
+
+.ui.grid {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.ui.relaxed.grid {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.ui[class*="very relaxed"].grid {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
+
+/* Preserve Rows Spacing on Consecutive Grids */
+
+.ui.grid + .grid {
+  margin-top: 1rem;
+}
+
+/*-------------------
+       Columns
+--------------------*/
+
+/* Standard 16 column */
+
+.ui.grid > .column:not(.row),
+.ui.grid > .row > .column {
+  position: relative;
+  display: inline-block;
+  width: 6.25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+.ui.grid > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*-------------------
+        Rows
+--------------------*/
+
+.ui.grid > .row {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100% !important;
+  padding: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*-------------------
+       Columns
+--------------------*/
+
+/* Vertical padding when no rows */
+
+.ui.grid > .column:not(.row) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ui.grid > .row > .column {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/*-------------------
+      Content
+--------------------*/
+
+.ui.grid > .row > img,
+.ui.grid > .row > .column > img {
+  max-width: 100%;
+}
+
+/*-------------------
+    Loose Coupling
+--------------------*/
+
+/* Collapse Margin on Consecutive Grid */
+
+.ui.grid > .ui.grid:first-child {
+  margin-top: 0em;
+}
+
+.ui.grid > .ui.grid:last-child {
+  margin-bottom: 0em;
+}
+
+/* Segment inside Aligned Grid */
+
+.ui.grid .aligned.row > .column > .segment:not(.compact),
+.ui.aligned.grid .column > .segment:not(.compact) {
+  width: 100%;
+}
+
+/* Align Dividers with Gutter */
+
+.ui.grid .row + .ui.divider {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 1rem 1rem;
+}
+
+.ui.grid .column + .ui.vertical.divider {
+  height: calc(50% -  1rem );
+}
+
+/* Remove Border on Last Horizontal Segment */
+
+.ui.grid > .row > .column:last-child > .horizontal.segment,
+.ui.grid > .column:last-child > .horizontal.segment {
+  box-shadow: none;
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*-----------------------
+       Page Grid
+-------------------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.page.grid {
+    width: auto;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 23%;
+    padding-right: 23%;
+  }
+}
+
+/*-------------------
+     Column Count
+--------------------*/
+
+/* Assume full width with one column */
+
+.ui.grid > .column:only-child,
+.ui.grid > .row > .column:only-child {
+  width: 100%;
+}
+
+/* Grid Based */
+
+.ui[class*="one column"].grid > .row > .column,
+.ui[class*="one column"].grid > .column:not(.row) {
+  width: 100%;
+}
+
+.ui[class*="two column"].grid > .row > .column,
+.ui[class*="two column"].grid > .column:not(.row) {
+  width: 50%;
+}
+
+.ui[class*="three column"].grid > .row > .column,
+.ui[class*="three column"].grid > .column:not(.row) {
+  width: 33.33333333%;
+}
+
+.ui[class*="four column"].grid > .row > .column,
+.ui[class*="four column"].grid > .column:not(.row) {
+  width: 25%;
+}
+
+.ui[class*="five column"].grid > .row > .column,
+.ui[class*="five column"].grid > .column:not(.row) {
+  width: 20%;
+}
+
+.ui[class*="six column"].grid > .row > .column,
+.ui[class*="six column"].grid > .column:not(.row) {
+  width: 16.66666667%;
+}
+
+.ui[class*="seven column"].grid > .row > .column,
+.ui[class*="seven column"].grid > .column:not(.row) {
+  width: 14.28571429%;
+}
+
+.ui[class*="eight column"].grid > .row > .column,
+.ui[class*="eight column"].grid > .column:not(.row) {
+  width: 12.5%;
+}
+
+.ui[class*="nine column"].grid > .row > .column,
+.ui[class*="nine column"].grid > .column:not(.row) {
+  width: 11.11111111%;
+}
+
+.ui[class*="ten column"].grid > .row > .column,
+.ui[class*="ten column"].grid > .column:not(.row) {
+  width: 10%;
+}
+
+.ui[class*="eleven column"].grid > .row > .column,
+.ui[class*="eleven column"].grid > .column:not(.row) {
+  width: 9.09090909%;
+}
+
+.ui[class*="twelve column"].grid > .row > .column,
+.ui[class*="twelve column"].grid > .column:not(.row) {
+  width: 8.33333333%;
+}
+
+.ui[class*="thirteen column"].grid > .row > .column,
+.ui[class*="thirteen column"].grid > .column:not(.row) {
+  width: 7.69230769%;
+}
+
+.ui[class*="fourteen column"].grid > .row > .column,
+.ui[class*="fourteen column"].grid > .column:not(.row) {
+  width: 7.14285714%;
+}
+
+.ui[class*="fifteen column"].grid > .row > .column,
+.ui[class*="fifteen column"].grid > .column:not(.row) {
+  width: 6.66666667%;
+}
+
+.ui[class*="sixteen column"].grid > .row > .column,
+.ui[class*="sixteen column"].grid > .column:not(.row) {
+  width: 6.25%;
+}
+
+/* Row Based Overrides */
+
+.ui.grid > [class*="one column"].row > .column {
+  width: 100% !important;
+}
+
+.ui.grid > [class*="two column"].row > .column {
+  width: 50% !important;
+}
+
+.ui.grid > [class*="three column"].row > .column {
+  width: 33.33333333% !important;
+}
+
+.ui.grid > [class*="four column"].row > .column {
+  width: 25% !important;
+}
+
+.ui.grid > [class*="five column"].row > .column {
+  width: 20% !important;
+}
+
+.ui.grid > [class*="six column"].row > .column {
+  width: 16.66666667% !important;
+}
+
+.ui.grid > [class*="seven column"].row > .column {
+  width: 14.28571429% !important;
+}
+
+.ui.grid > [class*="eight column"].row > .column {
+  width: 12.5% !important;
+}
+
+.ui.grid > [class*="nine column"].row > .column {
+  width: 11.11111111% !important;
+}
+
+.ui.grid > [class*="ten column"].row > .column {
+  width: 10% !important;
+}
+
+.ui.grid > [class*="eleven column"].row > .column {
+  width: 9.09090909% !important;
+}
+
+.ui.grid > [class*="twelve column"].row > .column {
+  width: 8.33333333% !important;
+}
+
+.ui.grid > [class*="thirteen column"].row > .column {
+  width: 7.69230769% !important;
+}
+
+.ui.grid > [class*="fourteen column"].row > .column {
+  width: 7.14285714% !important;
+}
+
+.ui.grid > [class*="fifteen column"].row > .column {
+  width: 6.66666667% !important;
+}
+
+.ui.grid > [class*="sixteen column"].row > .column {
+  width: 6.25% !important;
+}
+
+/*-------------------
+    Column Width
+--------------------*/
+
+/* Sizing Combinations */
+
+.ui.grid > .row > [class*="one wide"].column,
+.ui.grid > .column.row > [class*="one wide"].column,
+.ui.grid > [class*="one wide"].column,
+.ui.column.grid > [class*="one wide"].column {
+  width: 6.25% !important;
+}
+
+.ui.grid > .row > [class*="two wide"].column,
+.ui.grid > .column.row > [class*="two wide"].column,
+.ui.grid > [class*="two wide"].column,
+.ui.column.grid > [class*="two wide"].column {
+  width: 12.5% !important;
+}
+
+.ui.grid > .row > [class*="three wide"].column,
+.ui.grid > .column.row > [class*="three wide"].column,
+.ui.grid > [class*="three wide"].column,
+.ui.column.grid > [class*="three wide"].column {
+  width: 18.75% !important;
+}
+
+.ui.grid > .row > [class*="four wide"].column,
+.ui.grid > .column.row > [class*="four wide"].column,
+.ui.grid > [class*="four wide"].column,
+.ui.column.grid > [class*="four wide"].column {
+  width: 25% !important;
+}
+
+.ui.grid > .row > [class*="five wide"].column,
+.ui.grid > .column.row > [class*="five wide"].column,
+.ui.grid > [class*="five wide"].column,
+.ui.column.grid > [class*="five wide"].column {
+  width: 31.25% !important;
+}
+
+.ui.grid > .row > [class*="six wide"].column,
+.ui.grid > .column.row > [class*="six wide"].column,
+.ui.grid > [class*="six wide"].column,
+.ui.column.grid > [class*="six wide"].column {
+  width: 37.5% !important;
+}
+
+.ui.grid > .row > [class*="seven wide"].column,
+.ui.grid > .column.row > [class*="seven wide"].column,
+.ui.grid > [class*="seven wide"].column,
+.ui.column.grid > [class*="seven wide"].column {
+  width: 43.75% !important;
+}
+
+.ui.grid > .row > [class*="eight wide"].column,
+.ui.grid > .column.row > [class*="eight wide"].column,
+.ui.grid > [class*="eight wide"].column,
+.ui.column.grid > [class*="eight wide"].column {
+  width: 50% !important;
+}
+
+.ui.grid > .row > [class*="nine wide"].column,
+.ui.grid > .column.row > [class*="nine wide"].column,
+.ui.grid > [class*="nine wide"].column,
+.ui.column.grid > [class*="nine wide"].column {
+  width: 56.25% !important;
+}
+
+.ui.grid > .row > [class*="ten wide"].column,
+.ui.grid > .column.row > [class*="ten wide"].column,
+.ui.grid > [class*="ten wide"].column,
+.ui.column.grid > [class*="ten wide"].column {
+  width: 62.5% !important;
+}
+
+.ui.grid > .row > [class*="eleven wide"].column,
+.ui.grid > .column.row > [class*="eleven wide"].column,
+.ui.grid > [class*="eleven wide"].column,
+.ui.column.grid > [class*="eleven wide"].column {
+  width: 68.75% !important;
+}
+
+.ui.grid > .row > [class*="twelve wide"].column,
+.ui.grid > .column.row > [class*="twelve wide"].column,
+.ui.grid > [class*="twelve wide"].column,
+.ui.column.grid > [class*="twelve wide"].column {
+  width: 75% !important;
+}
+
+.ui.grid > .row > [class*="thirteen wide"].column,
+.ui.grid > .column.row > [class*="thirteen wide"].column,
+.ui.grid > [class*="thirteen wide"].column,
+.ui.column.grid > [class*="thirteen wide"].column {
+  width: 81.25% !important;
+}
+
+.ui.grid > .row > [class*="fourteen wide"].column,
+.ui.grid > .column.row > [class*="fourteen wide"].column,
+.ui.grid > [class*="fourteen wide"].column,
+.ui.column.grid > [class*="fourteen wide"].column {
+  width: 87.5% !important;
+}
+
+.ui.grid > .row > [class*="fifteen wide"].column,
+.ui.grid > .column.row > [class*="fifteen wide"].column,
+.ui.grid > [class*="fifteen wide"].column,
+.ui.column.grid > [class*="fifteen wide"].column {
+  width: 93.75% !important;
+}
+
+.ui.grid > .row > [class*="sixteen wide"].column,
+.ui.grid > .column.row > [class*="sixteen wide"].column,
+.ui.grid > [class*="sixteen wide"].column,
+.ui.column.grid > [class*="sixteen wide"].column {
+  width: 100% !important;
+}
+
+/*----------------------
+    Width per Device
+-----------------------*/
+
+/* Mobile Sizing Combinations */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .ui.grid > .row > [class*="one wide mobile"].column,
+  .ui.grid > .column.row > [class*="one wide mobile"].column,
+  .ui.grid > [class*="one wide mobile"].column,
+  .ui.column.grid > [class*="one wide mobile"].column {
+    width: 6.25% !important;
+  }
+
+  .ui.grid > .row > [class*="two wide mobile"].column,
+  .ui.grid > .column.row > [class*="two wide mobile"].column,
+  .ui.grid > [class*="two wide mobile"].column,
+  .ui.column.grid > [class*="two wide mobile"].column {
+    width: 12.5% !important;
+  }
+
+  .ui.grid > .row > [class*="three wide mobile"].column,
+  .ui.grid > .column.row > [class*="three wide mobile"].column,
+  .ui.grid > [class*="three wide mobile"].column,
+  .ui.column.grid > [class*="three wide mobile"].column {
+    width: 18.75% !important;
+  }
+
+  .ui.grid > .row > [class*="four wide mobile"].column,
+  .ui.grid > .column.row > [class*="four wide mobile"].column,
+  .ui.grid > [class*="four wide mobile"].column,
+  .ui.column.grid > [class*="four wide mobile"].column {
+    width: 25% !important;
+  }
+
+  .ui.grid > .row > [class*="five wide mobile"].column,
+  .ui.grid > .column.row > [class*="five wide mobile"].column,
+  .ui.grid > [class*="five wide mobile"].column,
+  .ui.column.grid > [class*="five wide mobile"].column {
+    width: 31.25% !important;
+  }
+
+  .ui.grid > .row > [class*="six wide mobile"].column,
+  .ui.grid > .column.row > [class*="six wide mobile"].column,
+  .ui.grid > [class*="six wide mobile"].column,
+  .ui.column.grid > [class*="six wide mobile"].column {
+    width: 37.5% !important;
+  }
+
+  .ui.grid > .row > [class*="seven wide mobile"].column,
+  .ui.grid > .column.row > [class*="seven wide mobile"].column,
+  .ui.grid > [class*="seven wide mobile"].column,
+  .ui.column.grid > [class*="seven wide mobile"].column {
+    width: 43.75% !important;
+  }
+
+  .ui.grid > .row > [class*="eight wide mobile"].column,
+  .ui.grid > .column.row > [class*="eight wide mobile"].column,
+  .ui.grid > [class*="eight wide mobile"].column,
+  .ui.column.grid > [class*="eight wide mobile"].column {
+    width: 50% !important;
+  }
+
+  .ui.grid > .row > [class*="nine wide mobile"].column,
+  .ui.grid > .column.row > [class*="nine wide mobile"].column,
+  .ui.grid > [class*="nine wide mobile"].column,
+  .ui.column.grid > [class*="nine wide mobile"].column {
+    width: 56.25% !important;
+  }
+
+  .ui.grid > .row > [class*="ten wide mobile"].column,
+  .ui.grid > .column.row > [class*="ten wide mobile"].column,
+  .ui.grid > [class*="ten wide mobile"].column,
+  .ui.column.grid > [class*="ten wide mobile"].column {
+    width: 62.5% !important;
+  }
+
+  .ui.grid > .row > [class*="eleven wide mobile"].column,
+  .ui.grid > .column.row > [class*="eleven wide mobile"].column,
+  .ui.grid > [class*="eleven wide mobile"].column,
+  .ui.column.grid > [class*="eleven wide mobile"].column {
+    width: 68.75% !important;
+  }
+
+  .ui.grid > .row > [class*="twelve wide mobile"].column,
+  .ui.grid > .column.row > [class*="twelve wide mobile"].column,
+  .ui.grid > [class*="twelve wide mobile"].column,
+  .ui.column.grid > [class*="twelve wide mobile"].column {
+    width: 75% !important;
+  }
+
+  .ui.grid > .row > [class*="thirteen wide mobile"].column,
+  .ui.grid > .column.row > [class*="thirteen wide mobile"].column,
+  .ui.grid > [class*="thirteen wide mobile"].column,
+  .ui.column.grid > [class*="thirteen wide mobile"].column {
+    width: 81.25% !important;
+  }
+
+  .ui.grid > .row > [class*="fourteen wide mobile"].column,
+  .ui.grid > .column.row > [class*="fourteen wide mobile"].column,
+  .ui.grid > [class*="fourteen wide mobile"].column,
+  .ui.column.grid > [class*="fourteen wide mobile"].column {
+    width: 87.5% !important;
+  }
+
+  .ui.grid > .row > [class*="fifteen wide mobile"].column,
+  .ui.grid > .column.row > [class*="fifteen wide mobile"].column,
+  .ui.grid > [class*="fifteen wide mobile"].column,
+  .ui.column.grid > [class*="fifteen wide mobile"].column {
+    width: 93.75% !important;
+  }
+
+  .ui.grid > .row > [class*="sixteen wide mobile"].column,
+  .ui.grid > .column.row > [class*="sixteen wide mobile"].column,
+  .ui.grid > [class*="sixteen wide mobile"].column,
+  .ui.column.grid > [class*="sixteen wide mobile"].column {
+    width: 100% !important;
+  }
+}
+
+/* Tablet Sizing Combinations */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.grid > .row > [class*="one wide tablet"].column,
+  .ui.grid > .column.row > [class*="one wide tablet"].column,
+  .ui.grid > [class*="one wide tablet"].column,
+  .ui.column.grid > [class*="one wide tablet"].column {
+    width: 6.25% !important;
+  }
+
+  .ui.grid > .row > [class*="two wide tablet"].column,
+  .ui.grid > .column.row > [class*="two wide tablet"].column,
+  .ui.grid > [class*="two wide tablet"].column,
+  .ui.column.grid > [class*="two wide tablet"].column {
+    width: 12.5% !important;
+  }
+
+  .ui.grid > .row > [class*="three wide tablet"].column,
+  .ui.grid > .column.row > [class*="three wide tablet"].column,
+  .ui.grid > [class*="three wide tablet"].column,
+  .ui.column.grid > [class*="three wide tablet"].column {
+    width: 18.75% !important;
+  }
+
+  .ui.grid > .row > [class*="four wide tablet"].column,
+  .ui.grid > .column.row > [class*="four wide tablet"].column,
+  .ui.grid > [class*="four wide tablet"].column,
+  .ui.column.grid > [class*="four wide tablet"].column {
+    width: 25% !important;
+  }
+
+  .ui.grid > .row > [class*="five wide tablet"].column,
+  .ui.grid > .column.row > [class*="five wide tablet"].column,
+  .ui.grid > [class*="five wide tablet"].column,
+  .ui.column.grid > [class*="five wide tablet"].column {
+    width: 31.25% !important;
+  }
+
+  .ui.grid > .row > [class*="six wide tablet"].column,
+  .ui.grid > .column.row > [class*="six wide tablet"].column,
+  .ui.grid > [class*="six wide tablet"].column,
+  .ui.column.grid > [class*="six wide tablet"].column {
+    width: 37.5% !important;
+  }
+
+  .ui.grid > .row > [class*="seven wide tablet"].column,
+  .ui.grid > .column.row > [class*="seven wide tablet"].column,
+  .ui.grid > [class*="seven wide tablet"].column,
+  .ui.column.grid > [class*="seven wide tablet"].column {
+    width: 43.75% !important;
+  }
+
+  .ui.grid > .row > [class*="eight wide tablet"].column,
+  .ui.grid > .column.row > [class*="eight wide tablet"].column,
+  .ui.grid > [class*="eight wide tablet"].column,
+  .ui.column.grid > [class*="eight wide tablet"].column {
+    width: 50% !important;
+  }
+
+  .ui.grid > .row > [class*="nine wide tablet"].column,
+  .ui.grid > .column.row > [class*="nine wide tablet"].column,
+  .ui.grid > [class*="nine wide tablet"].column,
+  .ui.column.grid > [class*="nine wide tablet"].column {
+    width: 56.25% !important;
+  }
+
+  .ui.grid > .row > [class*="ten wide tablet"].column,
+  .ui.grid > .column.row > [class*="ten wide tablet"].column,
+  .ui.grid > [class*="ten wide tablet"].column,
+  .ui.column.grid > [class*="ten wide tablet"].column {
+    width: 62.5% !important;
+  }
+
+  .ui.grid > .row > [class*="eleven wide tablet"].column,
+  .ui.grid > .column.row > [class*="eleven wide tablet"].column,
+  .ui.grid > [class*="eleven wide tablet"].column,
+  .ui.column.grid > [class*="eleven wide tablet"].column {
+    width: 68.75% !important;
+  }
+
+  .ui.grid > .row > [class*="twelve wide tablet"].column,
+  .ui.grid > .column.row > [class*="twelve wide tablet"].column,
+  .ui.grid > [class*="twelve wide tablet"].column,
+  .ui.column.grid > [class*="twelve wide tablet"].column {
+    width: 75% !important;
+  }
+
+  .ui.grid > .row > [class*="thirteen wide tablet"].column,
+  .ui.grid > .column.row > [class*="thirteen wide tablet"].column,
+  .ui.grid > [class*="thirteen wide tablet"].column,
+  .ui.column.grid > [class*="thirteen wide tablet"].column {
+    width: 81.25% !important;
+  }
+
+  .ui.grid > .row > [class*="fourteen wide tablet"].column,
+  .ui.grid > .column.row > [class*="fourteen wide tablet"].column,
+  .ui.grid > [class*="fourteen wide tablet"].column,
+  .ui.column.grid > [class*="fourteen wide tablet"].column {
+    width: 87.5% !important;
+  }
+
+  .ui.grid > .row > [class*="fifteen wide tablet"].column,
+  .ui.grid > .column.row > [class*="fifteen wide tablet"].column,
+  .ui.grid > [class*="fifteen wide tablet"].column,
+  .ui.column.grid > [class*="fifteen wide tablet"].column {
+    width: 93.75% !important;
+  }
+
+  .ui.grid > .row > [class*="sixteen wide tablet"].column,
+  .ui.grid > .column.row > [class*="sixteen wide tablet"].column,
+  .ui.grid > [class*="sixteen wide tablet"].column,
+  .ui.column.grid > [class*="sixteen wide tablet"].column {
+    width: 100% !important;
+  }
+}
+
+/* Computer/Desktop Sizing Combinations */
+
+@media only screen and (min-width: 992px) {
+  .ui.grid > .row > [class*="one wide computer"].column,
+  .ui.grid > .column.row > [class*="one wide computer"].column,
+  .ui.grid > [class*="one wide computer"].column,
+  .ui.column.grid > [class*="one wide computer"].column {
+    width: 6.25% !important;
+  }
+
+  .ui.grid > .row > [class*="two wide computer"].column,
+  .ui.grid > .column.row > [class*="two wide computer"].column,
+  .ui.grid > [class*="two wide computer"].column,
+  .ui.column.grid > [class*="two wide computer"].column {
+    width: 12.5% !important;
+  }
+
+  .ui.grid > .row > [class*="three wide computer"].column,
+  .ui.grid > .column.row > [class*="three wide computer"].column,
+  .ui.grid > [class*="three wide computer"].column,
+  .ui.column.grid > [class*="three wide computer"].column {
+    width: 18.75% !important;
+  }
+
+  .ui.grid > .row > [class*="four wide computer"].column,
+  .ui.grid > .column.row > [class*="four wide computer"].column,
+  .ui.grid > [class*="four wide computer"].column,
+  .ui.column.grid > [class*="four wide computer"].column {
+    width: 25% !important;
+  }
+
+  .ui.grid > .row > [class*="five wide computer"].column,
+  .ui.grid > .column.row > [class*="five wide computer"].column,
+  .ui.grid > [class*="five wide computer"].column,
+  .ui.column.grid > [class*="five wide computer"].column {
+    width: 31.25% !important;
+  }
+
+  .ui.grid > .row > [class*="six wide computer"].column,
+  .ui.grid > .column.row > [class*="six wide computer"].column,
+  .ui.grid > [class*="six wide computer"].column,
+  .ui.column.grid > [class*="six wide computer"].column {
+    width: 37.5% !important;
+  }
+
+  .ui.grid > .row > [class*="seven wide computer"].column,
+  .ui.grid > .column.row > [class*="seven wide computer"].column,
+  .ui.grid > [class*="seven wide computer"].column,
+  .ui.column.grid > [class*="seven wide computer"].column {
+    width: 43.75% !important;
+  }
+
+  .ui.grid > .row > [class*="eight wide computer"].column,
+  .ui.grid > .column.row > [class*="eight wide computer"].column,
+  .ui.grid > [class*="eight wide computer"].column,
+  .ui.column.grid > [class*="eight wide computer"].column {
+    width: 50% !important;
+  }
+
+  .ui.grid > .row > [class*="nine wide computer"].column,
+  .ui.grid > .column.row > [class*="nine wide computer"].column,
+  .ui.grid > [class*="nine wide computer"].column,
+  .ui.column.grid > [class*="nine wide computer"].column {
+    width: 56.25% !important;
+  }
+
+  .ui.grid > .row > [class*="ten wide computer"].column,
+  .ui.grid > .column.row > [class*="ten wide computer"].column,
+  .ui.grid > [class*="ten wide computer"].column,
+  .ui.column.grid > [class*="ten wide computer"].column {
+    width: 62.5% !important;
+  }
+
+  .ui.grid > .row > [class*="eleven wide computer"].column,
+  .ui.grid > .column.row > [class*="eleven wide computer"].column,
+  .ui.grid > [class*="eleven wide computer"].column,
+  .ui.column.grid > [class*="eleven wide computer"].column {
+    width: 68.75% !important;
+  }
+
+  .ui.grid > .row > [class*="twelve wide computer"].column,
+  .ui.grid > .column.row > [class*="twelve wide computer"].column,
+  .ui.grid > [class*="twelve wide computer"].column,
+  .ui.column.grid > [class*="twelve wide computer"].column {
+    width: 75% !important;
+  }
+
+  .ui.grid > .row > [class*="thirteen wide computer"].column,
+  .ui.grid > .column.row > [class*="thirteen wide computer"].column,
+  .ui.grid > [class*="thirteen wide computer"].column,
+  .ui.column.grid > [class*="thirteen wide computer"].column {
+    width: 81.25% !important;
+  }
+
+  .ui.grid > .row > [class*="fourteen wide computer"].column,
+  .ui.grid > .column.row > [class*="fourteen wide computer"].column,
+  .ui.grid > [class*="fourteen wide computer"].column,
+  .ui.column.grid > [class*="fourteen wide computer"].column {
+    width: 87.5% !important;
+  }
+
+  .ui.grid > .row > [class*="fifteen wide computer"].column,
+  .ui.grid > .column.row > [class*="fifteen wide computer"].column,
+  .ui.grid > [class*="fifteen wide computer"].column,
+  .ui.column.grid > [class*="fifteen wide computer"].column {
+    width: 93.75% !important;
+  }
+
+  .ui.grid > .row > [class*="sixteen wide computer"].column,
+  .ui.grid > .column.row > [class*="sixteen wide computer"].column,
+  .ui.grid > [class*="sixteen wide computer"].column,
+  .ui.column.grid > [class*="sixteen wide computer"].column {
+    width: 100% !important;
+  }
+}
+
+/* Large Monitor Sizing Combinations */
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  .ui.grid > .row > [class*="one wide large screen"].column,
+  .ui.grid > .column.row > [class*="one wide large screen"].column,
+  .ui.grid > [class*="one wide large screen"].column,
+  .ui.column.grid > [class*="one wide large screen"].column {
+    width: 6.25% !important;
+  }
+
+  .ui.grid > .row > [class*="two wide large screen"].column,
+  .ui.grid > .column.row > [class*="two wide large screen"].column,
+  .ui.grid > [class*="two wide large screen"].column,
+  .ui.column.grid > [class*="two wide large screen"].column {
+    width: 12.5% !important;
+  }
+
+  .ui.grid > .row > [class*="three wide large screen"].column,
+  .ui.grid > .column.row > [class*="three wide large screen"].column,
+  .ui.grid > [class*="three wide large screen"].column,
+  .ui.column.grid > [class*="three wide large screen"].column {
+    width: 18.75% !important;
+  }
+
+  .ui.grid > .row > [class*="four wide large screen"].column,
+  .ui.grid > .column.row > [class*="four wide large screen"].column,
+  .ui.grid > [class*="four wide large screen"].column,
+  .ui.column.grid > [class*="four wide large screen"].column {
+    width: 25% !important;
+  }
+
+  .ui.grid > .row > [class*="five wide large screen"].column,
+  .ui.grid > .column.row > [class*="five wide large screen"].column,
+  .ui.grid > [class*="five wide large screen"].column,
+  .ui.column.grid > [class*="five wide large screen"].column {
+    width: 31.25% !important;
+  }
+
+  .ui.grid > .row > [class*="six wide large screen"].column,
+  .ui.grid > .column.row > [class*="six wide large screen"].column,
+  .ui.grid > [class*="six wide large screen"].column,
+  .ui.column.grid > [class*="six wide large screen"].column {
+    width: 37.5% !important;
+  }
+
+  .ui.grid > .row > [class*="seven wide large screen"].column,
+  .ui.grid > .column.row > [class*="seven wide large screen"].column,
+  .ui.grid > [class*="seven wide large screen"].column,
+  .ui.column.grid > [class*="seven wide large screen"].column {
+    width: 43.75% !important;
+  }
+
+  .ui.grid > .row > [class*="eight wide large screen"].column,
+  .ui.grid > .column.row > [class*="eight wide large screen"].column,
+  .ui.grid > [class*="eight wide large screen"].column,
+  .ui.column.grid > [class*="eight wide large screen"].column {
+    width: 50% !important;
+  }
+
+  .ui.grid > .row > [class*="nine wide large screen"].column,
+  .ui.grid > .column.row > [class*="nine wide large screen"].column,
+  .ui.grid > [class*="nine wide large screen"].column,
+  .ui.column.grid > [class*="nine wide large screen"].column {
+    width: 56.25% !important;
+  }
+
+  .ui.grid > .row > [class*="ten wide large screen"].column,
+  .ui.grid > .column.row > [class*="ten wide large screen"].column,
+  .ui.grid > [class*="ten wide large screen"].column,
+  .ui.column.grid > [class*="ten wide large screen"].column {
+    width: 62.5% !important;
+  }
+
+  .ui.grid > .row > [class*="eleven wide large screen"].column,
+  .ui.grid > .column.row > [class*="eleven wide large screen"].column,
+  .ui.grid > [class*="eleven wide large screen"].column,
+  .ui.column.grid > [class*="eleven wide large screen"].column {
+    width: 68.75% !important;
+  }
+
+  .ui.grid > .row > [class*="twelve wide large screen"].column,
+  .ui.grid > .column.row > [class*="twelve wide large screen"].column,
+  .ui.grid > [class*="twelve wide large screen"].column,
+  .ui.column.grid > [class*="twelve wide large screen"].column {
+    width: 75% !important;
+  }
+
+  .ui.grid > .row > [class*="thirteen wide large screen"].column,
+  .ui.grid > .column.row > [class*="thirteen wide large screen"].column,
+  .ui.grid > [class*="thirteen wide large screen"].column,
+  .ui.column.grid > [class*="thirteen wide large screen"].column {
+    width: 81.25% !important;
+  }
+
+  .ui.grid > .row > [class*="fourteen wide large screen"].column,
+  .ui.grid > .column.row > [class*="fourteen wide large screen"].column,
+  .ui.grid > [class*="fourteen wide large screen"].column,
+  .ui.column.grid > [class*="fourteen wide large screen"].column {
+    width: 87.5% !important;
+  }
+
+  .ui.grid > .row > [class*="fifteen wide large screen"].column,
+  .ui.grid > .column.row > [class*="fifteen wide large screen"].column,
+  .ui.grid > [class*="fifteen wide large screen"].column,
+  .ui.column.grid > [class*="fifteen wide large screen"].column {
+    width: 93.75% !important;
+  }
+
+  .ui.grid > .row > [class*="sixteen wide large screen"].column,
+  .ui.grid > .column.row > [class*="sixteen wide large screen"].column,
+  .ui.grid > [class*="sixteen wide large screen"].column,
+  .ui.column.grid > [class*="sixteen wide large screen"].column {
+    width: 100% !important;
+  }
+}
+
+/* Widescreen Sizing Combinations */
+
+@media only screen and (min-width: 1920px) {
+  .ui.grid > .row > [class*="one wide widescreen"].column,
+  .ui.grid > .column.row > [class*="one wide widescreen"].column,
+  .ui.grid > [class*="one wide widescreen"].column,
+  .ui.column.grid > [class*="one wide widescreen"].column {
+    width: 6.25% !important;
+  }
+
+  .ui.grid > .row > [class*="two wide widescreen"].column,
+  .ui.grid > .column.row > [class*="two wide widescreen"].column,
+  .ui.grid > [class*="two wide widescreen"].column,
+  .ui.column.grid > [class*="two wide widescreen"].column {
+    width: 12.5% !important;
+  }
+
+  .ui.grid > .row > [class*="three wide widescreen"].column,
+  .ui.grid > .column.row > [class*="three wide widescreen"].column,
+  .ui.grid > [class*="three wide widescreen"].column,
+  .ui.column.grid > [class*="three wide widescreen"].column {
+    width: 18.75% !important;
+  }
+
+  .ui.grid > .row > [class*="four wide widescreen"].column,
+  .ui.grid > .column.row > [class*="four wide widescreen"].column,
+  .ui.grid > [class*="four wide widescreen"].column,
+  .ui.column.grid > [class*="four wide widescreen"].column {
+    width: 25% !important;
+  }
+
+  .ui.grid > .row > [class*="five wide widescreen"].column,
+  .ui.grid > .column.row > [class*="five wide widescreen"].column,
+  .ui.grid > [class*="five wide widescreen"].column,
+  .ui.column.grid > [class*="five wide widescreen"].column {
+    width: 31.25% !important;
+  }
+
+  .ui.grid > .row > [class*="six wide widescreen"].column,
+  .ui.grid > .column.row > [class*="six wide widescreen"].column,
+  .ui.grid > [class*="six wide widescreen"].column,
+  .ui.column.grid > [class*="six wide widescreen"].column {
+    width: 37.5% !important;
+  }
+
+  .ui.grid > .row > [class*="seven wide widescreen"].column,
+  .ui.grid > .column.row > [class*="seven wide widescreen"].column,
+  .ui.grid > [class*="seven wide widescreen"].column,
+  .ui.column.grid > [class*="seven wide widescreen"].column {
+    width: 43.75% !important;
+  }
+
+  .ui.grid > .row > [class*="eight wide widescreen"].column,
+  .ui.grid > .column.row > [class*="eight wide widescreen"].column,
+  .ui.grid > [class*="eight wide widescreen"].column,
+  .ui.column.grid > [class*="eight wide widescreen"].column {
+    width: 50% !important;
+  }
+
+  .ui.grid > .row > [class*="nine wide widescreen"].column,
+  .ui.grid > .column.row > [class*="nine wide widescreen"].column,
+  .ui.grid > [class*="nine wide widescreen"].column,
+  .ui.column.grid > [class*="nine wide widescreen"].column {
+    width: 56.25% !important;
+  }
+
+  .ui.grid > .row > [class*="ten wide widescreen"].column,
+  .ui.grid > .column.row > [class*="ten wide widescreen"].column,
+  .ui.grid > [class*="ten wide widescreen"].column,
+  .ui.column.grid > [class*="ten wide widescreen"].column {
+    width: 62.5% !important;
+  }
+
+  .ui.grid > .row > [class*="eleven wide widescreen"].column,
+  .ui.grid > .column.row > [class*="eleven wide widescreen"].column,
+  .ui.grid > [class*="eleven wide widescreen"].column,
+  .ui.column.grid > [class*="eleven wide widescreen"].column {
+    width: 68.75% !important;
+  }
+
+  .ui.grid > .row > [class*="twelve wide widescreen"].column,
+  .ui.grid > .column.row > [class*="twelve wide widescreen"].column,
+  .ui.grid > [class*="twelve wide widescreen"].column,
+  .ui.column.grid > [class*="twelve wide widescreen"].column {
+    width: 75% !important;
+  }
+
+  .ui.grid > .row > [class*="thirteen wide widescreen"].column,
+  .ui.grid > .column.row > [class*="thirteen wide widescreen"].column,
+  .ui.grid > [class*="thirteen wide widescreen"].column,
+  .ui.column.grid > [class*="thirteen wide widescreen"].column {
+    width: 81.25% !important;
+  }
+
+  .ui.grid > .row > [class*="fourteen wide widescreen"].column,
+  .ui.grid > .column.row > [class*="fourteen wide widescreen"].column,
+  .ui.grid > [class*="fourteen wide widescreen"].column,
+  .ui.column.grid > [class*="fourteen wide widescreen"].column {
+    width: 87.5% !important;
+  }
+
+  .ui.grid > .row > [class*="fifteen wide widescreen"].column,
+  .ui.grid > .column.row > [class*="fifteen wide widescreen"].column,
+  .ui.grid > [class*="fifteen wide widescreen"].column,
+  .ui.column.grid > [class*="fifteen wide widescreen"].column {
+    width: 93.75% !important;
+  }
+
+  .ui.grid > .row > [class*="sixteen wide widescreen"].column,
+  .ui.grid > .column.row > [class*="sixteen wide widescreen"].column,
+  .ui.grid > [class*="sixteen wide widescreen"].column,
+  .ui.column.grid > [class*="sixteen wide widescreen"].column {
+    width: 100% !important;
+  }
+}
+
+/*----------------------
+        Centered
+-----------------------*/
+
+.ui.centered.grid,
+.ui.centered.grid > .row,
+.ui.grid > .centered.row {
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ui.centered.grid > .column:not(.aligned):not(.row),
+.ui.centered.grid > .row > .column:not(.aligned),
+.ui.grid .centered.row > .column:not(.aligned) {
+  text-align: left;
+}
+
+.ui.grid > .centered.column,
+.ui.grid > .row > .centered.column {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------
+        Relaxed
+-----------------------*/
+
+.ui.relaxed.grid > .column:not(.row),
+.ui.relaxed.grid > .row > .column,
+.ui.grid > .relaxed.row > .column {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.ui[class*="very relaxed"].grid > .column:not(.row),
+.ui[class*="very relaxed"].grid > .row > .column,
+.ui.grid > [class*="very relaxed"].row > .column {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+/* Coupling with UI Divider */
+
+.ui.relaxed.grid .row + .ui.divider,
+.ui.grid .relaxed.row + .ui.divider {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.ui[class*="very relaxed"].grid .row + .ui.divider,
+.ui.grid [class*="very relaxed"].row + .ui.divider {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+/*----------------------
+        Padded
+-----------------------*/
+
+.ui.padded.grid:not(.vertically):not(.horizontally) {
+  margin: 0em !important;
+}
+
+[class*="horizontally padded"].ui.grid {
+  margin-left: 0em !important;
+  margin-right: 0em !important;
+}
+
+[class*="vertically padded"].ui.grid {
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+
+/*----------------------
+       "Floated"
+-----------------------*/
+
+.ui.grid [class*="left floated"].column {
+  margin-right: auto;
+}
+
+.ui.grid [class*="right floated"].column {
+  margin-left: auto;
+}
+
+/*----------------------
+        Divided
+-----------------------*/
+
+.ui.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
+.ui.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+}
+
+/* Swap from padding to margin on columns to have dividers align */
+
+.ui[class*="vertically divided"].grid > .column:not(.row),
+.ui[class*="vertically divided"].grid > .row > .column {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.ui[class*="vertically divided"].grid > .row {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* No divider on first column on row */
+
+.ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
+.ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+  box-shadow: none;
+}
+
+/* Divided Row */
+
+.ui.grid > .divided.row > .column {
+  box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+}
+
+.ui.grid > .divided.row > .column:first-child {
+  box-shadow: none;
+}
+
+/* Vertically Divided */
+
+.ui[class*="vertically divided"].grid > .row {
+  position: relative;
+}
+
+.ui[class*="vertically divided"].grid > .row:before {
+  position: absolute;
+  content: "";
+  top: 0em;
+  left: 0px;
+  width: calc(100% -  2rem );
+  height: 1px;
+  margin: 0% 1rem;
+  box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
+}
+
+/* Padded Horizontally Divided */
+
+[class*="horizontally padded"].ui.divided.grid,
+.ui.padded.divided.grid:not(.vertically):not(.horizontally) {
+  width: 100%;
+}
+
+/* First Row Vertically Divided */
+
+.ui[class*="vertically divided"].grid > .row:first-child:before {
+  box-shadow: none;
+}
+
+/* Inverted Divided */
+
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+}
+
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row):first-child,
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+  box-shadow: none;
+}
+
+.ui.inverted[class*="vertically divided"].grid > .row:before {
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
+}
+
+/* Relaxed */
+
+.ui.relaxed[class*="vertically divided"].grid > .row:before {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: calc(100% -  3rem );
+}
+
+.ui[class*="very relaxed"][class*="vertically divided"].grid > .row:before {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: calc(100% -  5rem );
+}
+
+/*----------------------
+         Celled
+-----------------------*/
+
+.ui.celled.grid {
+  width: 100%;
+  margin: 1em 0em;
+  box-shadow: 0px 0px 0px 1px #d4d4d5;
+}
+
+.ui.celled.grid > .row,
+.ui.celled.grid > .column.row,
+.ui.celled.grid > .column.row:first-child {
+  width: 100% !important;
+  margin: 0em;
+  padding: 0em;
+  box-shadow: 0px -1px 0px 0px #d4d4d5;
+}
+
+.ui.celled.grid > .column:not(.row),
+.ui.celled.grid > .row > .column {
+  box-shadow: -1px 0px 0px 0px #d4d4d5;
+}
+
+.ui.celled.grid > .column:first-child,
+.ui.celled.grid > .row > .column:first-child {
+  box-shadow: none;
+}
+
+.ui.celled.page.grid {
+  box-shadow: none;
+}
+
+.ui.celled.grid > .column:not(.row),
+.ui.celled.grid > .row > .column {
+  padding: 1em;
+}
+
+.ui.relaxed.celled.grid > .column:not(.row),
+.ui.relaxed.celled.grid > .row > .column {
+  padding: 1.5em;
+}
+
+.ui[class*="very relaxed"].celled.grid > .column:not(.row),
+.ui[class*="very relaxed"].celled.grid > .row > .column {
+  padding: 2em;
+}
+
+/* Internally Celled */
+
+.ui[class*="internally celled"].grid {
+  box-shadow: none;
+  margin: 0em;
+}
+
+.ui[class*="internally celled"].grid > .row:first-child {
+  box-shadow: none;
+}
+
+.ui[class*="internally celled"].grid > .row > .column:first-child {
+  box-shadow: none;
+}
+
+/*----------------------
+   Vertically Aligned
+-----------------------*/
+
+/* Top Aligned */
+
+.ui[class*="top aligned"].grid .column:not(.row),
+.ui.grid > [class*="top aligned"].row > .column,
+.ui.grid > [class*="top aligned"].column:not(.row),
+.ui.grid > .row > [class*="top aligned"].column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  vertical-align: top;
+  -webkit-align-self: flex-start !important;
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+/* Middle Aligned */
+
+.ui[class*="middle aligned"].grid .column:not(.row),
+.ui.grid > [class*="middle aligned"].row > .column,
+.ui.grid > [class*="middle aligned"].column:not(.row),
+.ui.grid > .row > [class*="middle aligned"].column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  vertical-align: middle;
+  -webkit-align-self: center !important;
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+/* Bottom Aligned */
+
+.ui[class*="bottom aligned"].grid .column:not(.row),
+.ui.grid > [class*="bottom aligned"].row > .column,
+.ui.grid > [class*="bottom aligned"].column:not(.row),
+.ui.grid > .row > [class*="bottom aligned"].column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  vertical-align: bottom;
+  -webkit-align-self: flex-end !important;
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+}
+
+/* Stretched */
+
+.ui.stretched.grid > .row > .column,
+.ui.stretched.grid > .column,
+.ui.grid > .stretched.row > .column,
+.ui.grid > .stretched.column:not(.row),
+.ui.grid > .row > .stretched.column {
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.ui.stretched.grid > .row > .column > *,
+.ui.stretched.grid > .column > *,
+.ui.grid > .stretched.row > .column > *,
+.ui.grid > .stretched.column:not(.row) > *,
+.ui.grid > .row > .stretched.column > * {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/*----------------------
+  Horizontally Centered
+-----------------------*/
+
+/* Left Aligned */
+
+.ui[class*="left aligned"].grid .column,
+.ui.grid > [class*="left aligned"].row > .column,
+.ui.grid > [class*="left aligned"].column.column,
+.ui.grid > .row > [class*="left aligned"].column {
+  text-align: left;
+  -webkit-align-self: inherit;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
+}
+
+/* Center Aligned */
+
+.ui[class*="center aligned"].grid .column,
+.ui.grid > [class*="center aligned"].row > .column,
+.ui.grid > [class*="center aligned"].column.column,
+.ui.grid > .row > [class*="center aligned"].column {
+  text-align: center;
+  -webkit-align-self: inherit;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
+}
+
+.ui[class*="center aligned"].grid {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* Right Aligned */
+
+.ui[class*="right aligned"].grid .column,
+.ui.grid > [class*="right aligned"].row > .column,
+.ui.grid > [class*="right aligned"].column.column,
+.ui.grid > .row > [class*="right aligned"].column {
+  text-align: right;
+  -webkit-align-self: inherit;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
+}
+
+/* Justified */
+
+.ui.justified.grid,
+.ui.justified.grid > .row > .column,
+.ui.justified.grid > .column,
+.ui.grid .justified.column,
+.ui.grid > .justified.row > .column {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.ui.grid .justified.column {
+  text-align: justify !important;
+  -webkit-hyphens: auto !important;
+  -moz-hyphens: auto !important;
+  -ms-hyphens: auto !important;
+  hyphens: auto !important;
+}
+
+/*----------------------
+         Colored
+-----------------------*/
+
+.ui.grid > .row > .red.column,
+.ui.grid > .row > .orange.column,
+.ui.grid > .row > .yellow.column,
+.ui.grid > .row > .olive.column,
+.ui.grid > .row > .green.column,
+.ui.grid > .row > .teal.column,
+.ui.grid > .row > .blue.column,
+.ui.grid > .row > .violet.column,
+.ui.grid > .row > .purple.column,
+.ui.grid > .row > .pink.column,
+.ui.grid > .row > .brown.column,
+.ui.grid > .row > .grey.column,
+.ui.grid > .row > .black.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Red */
+
+.ui.grid > .red.row,
+.ui.grid > .red.column,
+.ui.grid > .row > .red.column {
+  background-color: #db2828 !important;
+  color: #ffffff;
+}
+
+/* Orange */
+
+.ui.grid > .orange.row,
+.ui.grid > .orange.column,
+.ui.grid > .row > .orange.column {
+  background-color: #f2711c !important;
+  color: #ffffff;
+}
+
+/* Yellow */
+
+.ui.grid > .yellow.row,
+.ui.grid > .yellow.column,
+.ui.grid > .row > .yellow.column {
+  background-color: #fbbd08 !important;
+  color: #ffffff;
+}
+
+/* Olive */
+
+.ui.grid > .olive.row,
+.ui.grid > .olive.column,
+.ui.grid > .row > .olive.column {
+  background-color: #b5cc18 !important;
+  color: #ffffff;
+}
+
+/* Green */
+
+.ui.grid > .green.row,
+.ui.grid > .green.column,
+.ui.grid > .row > .green.column {
+  background-color: #21ba45 !important;
+  color: #ffffff;
+}
+
+/* Teal */
+
+.ui.grid > .teal.row,
+.ui.grid > .teal.column,
+.ui.grid > .row > .teal.column {
+  background-color: #00b5ad !important;
+  color: #ffffff;
+}
+
+/* Blue */
+
+.ui.grid > .blue.row,
+.ui.grid > .blue.column,
+.ui.grid > .row > .blue.column {
+  background-color: #2185d0 !important;
+  color: #ffffff;
+}
+
+/* Violet */
+
+.ui.grid > .violet.row,
+.ui.grid > .violet.column,
+.ui.grid > .row > .violet.column {
+  background-color: #6435c9 !important;
+  color: #ffffff;
+}
+
+/* Purple */
+
+.ui.grid > .purple.row,
+.ui.grid > .purple.column,
+.ui.grid > .row > .purple.column {
+  background-color: #a333c8 !important;
+  color: #ffffff;
+}
+
+/* Pink */
+
+.ui.grid > .pink.row,
+.ui.grid > .pink.column,
+.ui.grid > .row > .pink.column {
+  background-color: #e03997 !important;
+  color: #ffffff;
+}
+
+/* Brown */
+
+.ui.grid > .brown.row,
+.ui.grid > .brown.column,
+.ui.grid > .row > .brown.column {
+  background-color: #a5673f !important;
+  color: #ffffff;
+}
+
+/* Grey */
+
+.ui.grid > .grey.row,
+.ui.grid > .grey.column,
+.ui.grid > .row > .grey.column {
+  background-color: #767676 !important;
+  color: #ffffff;
+}
+
+/* Black */
+
+.ui.grid > .black.row,
+.ui.grid > .black.column,
+.ui.grid > .row > .black.column {
+  background-color: #1b1c1d !important;
+  color: #ffffff;
+}
+
+/*----------------------
+      Equal Width
+-----------------------*/
+
+.ui[class*="equal width"].grid > .column:not(.row),
+.ui[class*="equal width"].grid > .row > .column,
+.ui.grid > [class*="equal width"].row > .column {
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.ui[class*="equal width"].grid > .wide.column,
+.ui[class*="equal width"].grid > .row > .wide.column,
+.ui.grid > [class*="equal width"].row > .wide.column {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+/*-------------------
+      Doubling
+--------------------*/
+
+/* Tablet Only */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.doubling.grid {
+    width: auto;
+  }
+
+  .ui.grid > .doubling.row,
+  .ui.doubling.grid > .row {
+    margin: 0em !important;
+    padding: 0em !important;
+  }
+
+  .ui.grid > .doubling.row > .column,
+  .ui.doubling.grid > .row > .column {
+    display: inline-block !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: none !important;
+    margin: 0em;
+  }
+
+  .ui[class*="two column"].doubling.grid > .row > .column,
+  .ui[class*="two column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="two column"].doubling.row.row > .column {
+    width: 100% !important;
+  }
+
+  .ui[class*="three column"].doubling.grid > .row > .column,
+  .ui[class*="three column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="three column"].doubling.row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="four column"].doubling.grid > .row > .column,
+  .ui[class*="four column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="four column"].doubling.row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="five column"].doubling.grid > .row > .column,
+  .ui[class*="five column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="five column"].doubling.row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="six column"].doubling.grid > .row > .column,
+  .ui[class*="six column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="six column"].doubling.row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="seven column"].doubling.grid > .row > .column,
+  .ui[class*="seven column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="seven column"].doubling.row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="eight column"].doubling.grid > .row > .column,
+  .ui[class*="eight column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="eight column"].doubling.row.row > .column {
+    width: 25% !important;
+  }
+
+  .ui[class*="nine column"].doubling.grid > .row > .column,
+  .ui[class*="nine column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="nine column"].doubling.row.row > .column {
+    width: 25% !important;
+  }
+
+  .ui[class*="ten column"].doubling.grid > .row > .column,
+  .ui[class*="ten column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="ten column"].doubling.row.row > .column {
+    width: 20% !important;
+  }
+
+  .ui[class*="eleven column"].doubling.grid > .row > .column,
+  .ui[class*="eleven column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="eleven column"].doubling.row.row > .column {
+    width: 20% !important;
+  }
+
+  .ui[class*="twelve column"].doubling.grid > .row > .column,
+  .ui[class*="twelve column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="twelve column"].doubling.row.row > .column {
+    width: 16.66666667% !important;
+  }
+
+  .ui[class*="thirteen column"].doubling.grid > .row > .column,
+  .ui[class*="thirteen column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="thirteen column"].doubling.row.row > .column {
+    width: 16.66666667% !important;
+  }
+
+  .ui[class*="fourteen column"].doubling.grid > .row > .column,
+  .ui[class*="fourteen column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="fourteen column"].doubling.row.row > .column {
+    width: 14.28571429% !important;
+  }
+
+  .ui[class*="fifteen column"].doubling.grid > .row > .column,
+  .ui[class*="fifteen column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="fifteen column"].doubling.row.row > .column {
+    width: 14.28571429% !important;
+  }
+
+  .ui[class*="sixteen column"].doubling.grid > .row > .column,
+  .ui[class*="sixteen column"].doubling.grid > .column:not(.row),
+  .ui.grid > [class*="sixteen column"].doubling.row.row > .column {
+    width: 12.5% !important;
+  }
+}
+
+/* Mobily Only */
+
+@media only screen and (max-width: 767px) {
+  .ui.grid > .doubling.row,
+  .ui.doubling.grid > .row {
+    margin: 0em !important;
+    padding: 0em !important;
+  }
+
+  .ui.grid > .doubling.row > .column,
+  .ui.doubling.grid > .row > .column {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin: 0em !important;
+    box-shadow: none !important;
+  }
+
+  .ui[class*="two column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="two column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="two column"].doubling:not(.stackable).row.row > .column {
+    width: 100% !important;
+  }
+
+  .ui[class*="three column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="three column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="three column"].doubling:not(.stackable).row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="four column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="four column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="four column"].doubling:not(.stackable).row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="five column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="five column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="five column"].doubling:not(.stackable).row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="six column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="six column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="six column"].doubling:not(.stackable).row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="seven column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="seven column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="seven column"].doubling:not(.stackable).row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="eight column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="eight column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="eight column"].doubling:not(.stackable).row.row > .column {
+    width: 50% !important;
+  }
+
+  .ui[class*="nine column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="nine column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="nine column"].doubling:not(.stackable).row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="ten column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="ten column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="ten column"].doubling:not(.stackable).row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="eleven column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="eleven column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="eleven column"].doubling:not(.stackable).row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="twelve column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="twelve column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="twelve column"].doubling:not(.stackable).row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="thirteen column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="thirteen column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="thirteen column"].doubling:not(.stackable).row.row > .column {
+    width: 33.33333333% !important;
+  }
+
+  .ui[class*="fourteen column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="fourteen column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="fourteen column"].doubling:not(.stackable).row.row > .column {
+    width: 25% !important;
+  }
+
+  .ui[class*="fifteen column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="fifteen column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="fifteen column"].doubling:not(.stackable).row.row > .column {
+    width: 25% !important;
+  }
+
+  .ui[class*="sixteen column"].doubling:not(.stackable).grid > .row > .column,
+  .ui[class*="sixteen column"].doubling:not(.stackable).grid > .column:not(.row),
+  .ui.grid > [class*="sixteen column"].doubling:not(.stackable).row.row > .column {
+    width: 25% !important;
+  }
+}
+
+/*-------------------
+      Stackable
+--------------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.grid {
+    width: auto;
+  }
+
+  .ui.stackable.grid > .row > .wide.column,
+  .ui.stackable.grid > .wide.column,
+  .ui.stackable.grid > .column.grid > .column,
+  .ui.stackable.grid > .column.row > .column,
+  .ui.stackable.grid > .row > .column,
+  .ui.stackable.grid > .column:not(.row),
+  .ui.grid > .stackable.stackable.row > .column {
+    width: 100% !important;
+    margin: 0em 0em !important;
+    box-shadow: none !important;
+    padding: 1rem 1rem !important;
+  }
+
+  .ui.stackable.grid:not(.vertically) > .row {
+    margin: 0em;
+    padding: 0em;
+  }
+
+  /* Coupling */
+
+  .ui.container > .ui.stackable.grid > .column,
+  .ui.container > .ui.stackable.grid > .row > .column {
+    padding-left: 0em !important;
+    padding-right: 0em !important;
+  }
+
+  /* Don't pad inside segment or nested grid */
+
+  .ui.grid .ui.stackable.grid,
+  .ui.segment:not(.vertical) .ui.stackable.page.grid {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+
+  /* Divided Stackable */
+
+  .ui.stackable.divided.grid > .row:first-child > .column:first-child,
+  .ui.stackable.celled.grid > .row:first-child > .column:first-child,
+  .ui.stackable.divided.grid > .column:not(.row):first-child,
+  .ui.stackable.celled.grid > .column:not(.row):first-child {
+    border-top: none !important;
+  }
+
+  .ui.inverted.stackable.celled.grid > .column:not(.row),
+  .ui.inverted.stackable.divided.grid > .column:not(.row),
+  .ui.inverted.stackable.celled.grid > .row > .column,
+  .ui.inverted.stackable.divided.grid > .row > .column {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ui.stackable.celled.grid > .column:not(.row),
+  .ui.stackable.divided:not(.vertically).grid > .column:not(.row),
+  .ui.stackable.celled.grid > .row > .column,
+  .ui.stackable.divided:not(.vertically).grid > .row > .column {
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: none !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .ui.stackable.divided:not(.vertically).grid > .column:not(.row),
+  .ui.stackable.divided:not(.vertically).grid > .row > .column {
+    padding-left: 0em !important;
+    padding-right: 0em !important;
+  }
+}
+
+/*----------------------
+     Only (Device)
+-----------------------*/
+
+/* These include arbitrary class repetitions for forced specificity */
+
+/* Mobile Only Hide */
+
+@media only screen and (max-width: 767px) {
+  .ui.tablet:not(.mobile).only.grid.grid.grid,
+  .ui.grid.grid.grid > [class*="tablet only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="tablet only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.mobile) {
+    display: none !important;
+  }
+
+  .ui[class*="computer only"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="computer only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="computer only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="computer only"].column:not(.mobile) {
+    display: none !important;
+  }
+
+  .ui[class*="large screen only"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+    display: none !important;
+  }
+
+  .ui[class*="widescreen"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Tablet Only Hide */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui[class*="mobile only"].grid.grid.grid:not(.tablet),
+  .ui.grid.grid.grid > [class*="mobile only"].row:not(.tablet),
+  .ui.grid.grid.grid > [class*="mobile only"].column:not(.tablet),
+  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.tablet) {
+    display: none !important;
+  }
+
+  .ui[class*="computer only"].grid.grid.grid:not(.tablet),
+  .ui.grid.grid.grid > [class*="computer only"].row:not(.tablet),
+  .ui.grid.grid.grid > [class*="computer only"].column:not(.tablet),
+  .ui.grid.grid.grid > .row > [class*="computer only"].column:not(.tablet) {
+    display: none !important;
+  }
+
+  .ui[class*="large screen only"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+    display: none !important;
+  }
+
+  .ui[class*="widescreen"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Computer Only Hide */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ui[class*="mobile only"].grid.grid.grid:not(.computer),
+  .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
+  .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
+  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.computer) {
+    display: none !important;
+  }
+
+  .ui[class*="tablet only"].grid.grid.grid:not(.computer),
+  .ui.grid.grid.grid > [class*="tablet only"].row:not(.computer),
+  .ui.grid.grid.grid > [class*="tablet only"].column:not(.computer),
+  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.computer) {
+    display: none !important;
+  }
+
+  .ui[class*="large screen only"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+    display: none !important;
+  }
+
+  .ui[class*="widescreen"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Large Screen Only Hide */
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  .ui[class*="mobile only"].grid.grid.grid:not(.computer),
+  .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
+  .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
+  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.computer) {
+    display: none !important;
+  }
+
+  .ui[class*="tablet only"].grid.grid.grid:not(.computer),
+  .ui.grid.grid.grid > [class*="tablet only"].row:not(.computer),
+  .ui.grid.grid.grid > [class*="tablet only"].column:not(.computer),
+  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.computer) {
+    display: none !important;
+  }
+
+  .ui[class*="widescreen"].grid.grid.grid:not(.mobile),
+  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Widescreen Only Hide */
+
+@media only screen and (min-width: 1920px) {
+  .ui[class*="mobile only"].grid.grid.grid:not(.computer),
+  .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
+  .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
+  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.computer) {
+    display: none !important;
+  }
+
+  .ui[class*="tablet only"].grid.grid.grid:not(.computer),
+  .ui.grid.grid.grid > [class*="tablet only"].row:not(.computer),
+  .ui.grid.grid.grid > [class*="tablet only"].column:not(.computer),
+  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.computer) {
+    display: none !important;
+  }
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+/*!
+ * # Semantic UI x.x - Header
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Header
+*******************************/
+
+/* Standard */
+
+.ui.header {
+  border: none;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  padding: 0em 0em;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.2857em;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.ui.header:first-child {
+  margin-top: -0.14285em;
+}
+
+.ui.header:last-child {
+  margin-bottom: 0em;
+}
+
+/*--------------
+   Sub Header
+---------------*/
+
+.ui.header .sub.header {
+  font-weight: normal;
+  padding: 0em;
+  margin: 0em;
+  font-size: 1rem;
+  line-height: 1.2em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*--------------
+      Icon
+---------------*/
+
+.ui.header > .icon {
+  display: table-cell;
+  opacity: 1;
+  font-size: 1.5em;
+  padding-top: 0.14285em;
+  vertical-align: middle;
+}
+
+/* With Text Node */
+
+.ui.header .icon:only-child {
+  display: inline-block;
+  padding: 0em;
+  margin-right: 0.75rem;
+}
+
+/*-------------------
+        Image
+--------------------*/
+
+.ui.header > .image,
+.ui.header > img {
+  display: inline-block;
+  margin-top: 0.14285em;
+  width: 2.5em;
+  height: auto;
+  vertical-align: middle;
+}
+
+.ui.header > .image:only-child,
+.ui.header > img:only-child {
+  margin-right: 0.75rem;
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.header .content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* After Image */
+
+.ui.header > img + .content,
+.ui.header > .image + .content {
+  padding-left: 0.75rem;
+  vertical-align: middle;
+}
+
+/* After Icon */
+
+.ui.header > .icon + .content {
+  padding-left: 0.75rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*--------------
+ Loose Coupling
+---------------*/
+
+.ui.header .ui.label {
+  font-size: '';
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Positioning */
+
+.ui.header + p {
+  margin-top: 0em;
+}
+
+/*******************************
+            Types
+*******************************/
+
+/*--------------
+     Page
+---------------*/
+
+h1.ui.header {
+  font-size: 2rem;
+}
+
+h2.ui.header {
+  font-size: 1.714rem;
+}
+
+h3.ui.header {
+  font-size: 1.28rem;
+}
+
+h4.ui.header {
+  font-size: 1.071rem;
+}
+
+h5.ui.header {
+  font-size: 1rem;
+}
+
+/* Sub Header */
+
+h1.ui.header .sub.header {
+  font-size: 1.14285714rem;
+}
+
+h2.ui.header .sub.header {
+  font-size: 1.14285714rem;
+}
+
+h3.ui.header .sub.header {
+  font-size: 1rem;
+}
+
+h4.ui.header .sub.header {
+  font-size: 1rem;
+}
+
+h5.ui.header .sub.header {
+  font-size: 0.92857143rem;
+}
+
+/*--------------
+ Content Heading
+---------------*/
+
+.ui.huge.header {
+  min-height: 1em;
+  font-size: 2em;
+}
+
+.ui.large.header {
+  font-size: 1.714em;
+}
+
+.ui.medium.header {
+  font-size: 1.28em;
+}
+
+.ui.small.header {
+  font-size: 1.071em;
+}
+
+.ui.tiny.header {
+  font-size: 1em;
+}
+
+/* Sub Header */
+
+.ui.huge.header .sub.header {
+  font-size: 1.14285714rem;
+}
+
+.ui.large.header .sub.header {
+  font-size: 1.14285714rem;
+}
+
+.ui.header .sub.header {
+  font-size: 1rem;
+}
+
+.ui.small.header .sub.header {
+  font-size: 1rem;
+}
+
+.ui.tiny.header .sub.header {
+  font-size: 0.92857143rem;
+}
+
+/*--------------
+   Sub Heading
+---------------*/
+
+.ui.sub.header {
+  padding: 0em;
+  margin-bottom: 0.14285714rem;
+  font-weight: bold;
+  font-size: 0.85714286em;
+  text-transform: uppercase;
+  color: '';
+}
+
+.ui.small.sub.header {
+  font-size: 0.71428571em;
+}
+
+.ui.sub.header {
+  font-size: 0.85714286em;
+}
+
+.ui.large.sub.header {
+  font-size: 0.92857143em;
+}
+
+.ui.huge.sub.header {
+  font-size: 1em;
+}
+
+/*-------------------
+        Icon
+--------------------*/
+
+.ui.icon.header {
+  display: inline-block;
+  text-align: center;
+  margin: 2rem 0em 1rem;
+}
+
+.ui.icon.header:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.icon.header:first-child {
+  margin-top: 0em;
+}
+
+.ui.icon.header .icon {
+  float: none;
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  padding: 0em;
+  font-size: 3em;
+  margin: 0em auto 0.5rem;
+  opacity: 1;
+}
+
+.ui.icon.header .content {
+  display: block;
+}
+
+.ui.icon.header .circular.icon {
+  font-size: 2em;
+}
+
+.ui.icon.header .square.icon {
+  font-size: 2em;
+}
+
+.ui.block.icon.header .icon {
+  margin-bottom: 0em;
+}
+
+.ui.icon.header.aligned {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*******************************
+            States
+*******************************/
+
+.ui.disabled.header {
+  opacity: 0.45;
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+      Inverted
+--------------------*/
+
+.ui.inverted.header {
+  color: #ffffff;
+}
+
+.ui.inverted.header .sub.header {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ui.inverted.attached.header {
+  background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.ui.inverted.block.header {
+  background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  box-shadow: none;
+}
+
+.ui.inverted.block.header {
+  border-bottom: none;
+}
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*--- Red ---*/
+
+.ui.red.header {
+  color: #db2828 !important;
+}
+
+a.ui.red.header:hover {
+  color: #d01919 !important;
+}
+
+.ui.red.dividing.header {
+  border-bottom: 2px solid #db2828;
+}
+
+/* Inverted */
+
+.ui.inverted.red.header {
+  color: #ff695e !important;
+}
+
+a.ui.inverted.red.header:hover {
+  color: #ff5144 !important;
+}
+
+/*--- Orange ---*/
+
+.ui.orange.header {
+  color: #f2711c !important;
+}
+
+a.ui.orange.header:hover {
+  color: #f26202 !important;
+}
+
+.ui.orange.dividing.header {
+  border-bottom: 2px solid #f2711c;
+}
+
+/* Inverted */
+
+.ui.inverted.orange.header {
+  color: #ff851b !important;
+}
+
+a.ui.inverted.orange.header:hover {
+  color: #ff7701 !important;
+}
+
+/*--- Olive ---*/
+
+.ui.olive.header {
+  color: #b5cc18 !important;
+}
+
+a.ui.olive.header:hover {
+  color: #a7bd0d !important;
+}
+
+.ui.olive.dividing.header {
+  border-bottom: 2px solid #b5cc18;
+}
+
+/* Inverted */
+
+.ui.inverted.olive.header {
+  color: #d9e778 !important;
+}
+
+a.ui.inverted.olive.header:hover {
+  color: #d8ea5c !important;
+}
+
+/*--- Yellow ---*/
+
+.ui.yellow.header {
+  color: #fbbd08 !important;
+}
+
+a.ui.yellow.header:hover {
+  color: #eaae00 !important;
+}
+
+.ui.yellow.dividing.header {
+  border-bottom: 2px solid #fbbd08;
+}
+
+/* Inverted */
+
+.ui.inverted.yellow.header {
+  color: #ffe21f !important;
+}
+
+a.ui.inverted.yellow.header:hover {
+  color: #ffdf05 !important;
+}
+
+/*--- Green ---*/
+
+.ui.green.header {
+  color: #21ba45 !important;
+}
+
+a.ui.green.header:hover {
+  color: #16ab39 !important;
+}
+
+.ui.green.dividing.header {
+  border-bottom: 2px solid #21ba45;
+}
+
+/* Inverted */
+
+.ui.inverted.green.header {
+  color: #2ecc40 !important;
+}
+
+a.ui.inverted.green.header:hover {
+  color: #22be34 !important;
+}
+
+/*--- Teal ---*/
+
+.ui.teal.header {
+  color: #00b5ad !important;
+}
+
+a.ui.teal.header:hover {
+  color: #009c95 !important;
+}
+
+.ui.teal.dividing.header {
+  border-bottom: 2px solid #00b5ad;
+}
+
+/* Inverted */
+
+.ui.inverted.teal.header {
+  color: #6dffff !important;
+}
+
+a.ui.inverted.teal.header:hover {
+  color: #54ffff !important;
+}
+
+/*--- Blue ---*/
+
+.ui.blue.header {
+  color: #2185d0 !important;
+}
+
+a.ui.blue.header:hover {
+  color: #1678c2 !important;
+}
+
+.ui.blue.dividing.header {
+  border-bottom: 2px solid #2185d0;
+}
+
+/* Inverted */
+
+.ui.inverted.blue.header {
+  color: #54c8ff !important;
+}
+
+a.ui.inverted.blue.header:hover {
+  color: #3ac0ff !important;
+}
+
+/*--- Violet ---*/
+
+.ui.violet.header {
+  color: #6435c9 !important;
+}
+
+a.ui.violet.header:hover {
+  color: #5829bb !important;
+}
+
+.ui.violet.dividing.header {
+  border-bottom: 2px solid #6435c9;
+}
+
+/* Inverted */
+
+.ui.inverted.violet.header {
+  color: #a291fb !important;
+}
+
+a.ui.inverted.violet.header:hover {
+  color: #8a73ff !important;
+}
+
+/*--- Purple ---*/
+
+.ui.purple.header {
+  color: #a333c8 !important;
+}
+
+a.ui.purple.header:hover {
+  color: #9627ba !important;
+}
+
+.ui.purple.dividing.header {
+  border-bottom: 2px solid #a333c8;
+}
+
+/* Inverted */
+
+.ui.inverted.purple.header {
+  color: #dc73ff !important;
+}
+
+a.ui.inverted.purple.header:hover {
+  color: #d65aff !important;
+}
+
+/*--- Pink ---*/
+
+.ui.pink.header {
+  color: #e03997 !important;
+}
+
+a.ui.pink.header:hover {
+  color: #e61a8d !important;
+}
+
+.ui.pink.dividing.header {
+  border-bottom: 2px solid #e03997;
+}
+
+/* Inverted */
+
+.ui.inverted.pink.header {
+  color: #ff8edf !important;
+}
+
+a.ui.inverted.pink.header:hover {
+  color: #ff74d8 !important;
+}
+
+/*--- Brown ---*/
+
+.ui.brown.header {
+  color: #a5673f !important;
+}
+
+a.ui.brown.header:hover {
+  color: #975b33 !important;
+}
+
+.ui.brown.dividing.header {
+  border-bottom: 2px solid #a5673f;
+}
+
+/* Inverted */
+
+.ui.inverted.brown.header {
+  color: #d67c1c !important;
+}
+
+a.ui.inverted.brown.header:hover {
+  color: #c86f11 !important;
+}
+
+/*--- Grey ---*/
+
+.ui.grey.header {
+  color: #767676 !important;
+}
+
+a.ui.grey.header:hover {
+  color: #838383 !important;
+}
+
+.ui.grey.dividing.header {
+  border-bottom: 2px solid #767676;
+}
+
+/* Inverted */
+
+.ui.inverted.grey.header {
+  color: #dcddde !important;
+}
+
+a.ui.inverted.grey.header:hover {
+  color: #cfd0d2 !important;
+}
+
+/*-------------------
+       Aligned
+--------------------*/
+
+.ui.left.aligned.header {
+  text-align: left;
+}
+
+.ui.right.aligned.header {
+  text-align: right;
+}
+
+.ui.centered.header,
+.ui.center.aligned.header {
+  text-align: center;
+}
+
+.ui.justified.header {
+  text-align: justify;
+}
+
+.ui.justified.header:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+}
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui.floated.header,
+.ui[class*="left floated"].header {
+  float: left;
+  margin-top: 0em;
+  margin-right: 0.5em;
+}
+
+.ui[class*="right floated"].header {
+  float: right;
+  margin-top: 0em;
+  margin-left: 0.5em;
+}
+
+/*-------------------
+       Fittted
+--------------------*/
+
+.ui.fitted.header {
+  padding: 0em;
+}
+
+/*-------------------
+      Dividing
+--------------------*/
+
+.ui.dividing.header {
+  padding-bottom: 0.21428571rem;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.dividing.header .sub.header {
+  padding-bottom: 0.21428571rem;
+}
+
+.ui.dividing.header .icon {
+  margin-bottom: 0em;
+}
+
+.ui.inverted.dividing.header {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/*-------------------
+        Block
+--------------------*/
+
+.ui.block.header {
+  background: #f3f4f5;
+  padding: 0.71428571rem 1rem;
+  box-shadow: none;
+  border: 1px solid #d4d4d5;
+  border-radius: 0.28571429rem;
+}
+
+.ui.tiny.block.header {
+  font-size: 0.85714286rem;
+}
+
+.ui.small.block.header {
+  font-size: 0.92857143rem;
+}
+
+.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 1rem;
+}
+
+.ui.large.block.header {
+  font-size: 1.14285714rem;
+}
+
+.ui.huge.block.header {
+  font-size: 1.42857143rem;
+}
+
+/*-------------------
+       Attached
+--------------------*/
+
+.ui.attached.header {
+  background: #ffffff;
+  padding: 0.71428571rem 1rem;
+  margin-left: -1px;
+  margin-right: -1px;
+  box-shadow: none;
+  border: 1px solid #d4d4d5;
+}
+
+.ui.attached.block.header {
+  background: #f3f4f5;
+}
+
+.ui.attached:not(.top):not(.bottom).header {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0em;
+}
+
+.ui.top.attached.header {
+  margin-bottom: 0em;
+  border-bottom: none;
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+
+.ui.bottom.attached.header {
+  margin-top: 0em;
+  border-top: none;
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+}
+
+/* Attached Sizes */
+
+.ui.tiny.attached.header {
+  font-size: 0.85714286em;
+}
+
+.ui.small.attached.header {
+  font-size: 0.92857143em;
+}
+
+.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 1em;
+}
+
+.ui.large.attached.header {
+  font-size: 1.14285714em;
+}
+
+.ui.huge.attached.header {
+  font-size: 1.42857143em;
+}
+
+/*-------------------
+        Sizing
+--------------------*/
+
+.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 1.28em;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+/*
+ * # Semantic - Menu
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributor
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Menu
+---------------*/
+
+.ui.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0rem;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  font-weight: normal;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  min-height: 2.85714286em;
+}
+
+.ui.menu:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.menu:first-child {
+  margin-top: 0rem;
+}
+
+.ui.menu:last-child {
+  margin-bottom: 0rem;
+}
+
+/*--------------
+    Sub-Menu
+---------------*/
+
+.ui.menu .menu {
+  margin: 0em;
+}
+
+.ui.menu:not(.vertical) > .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*--------------
+      Item
+---------------*/
+
+.ui.menu:not(.vertical) .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ui.menu .item {
+  position: relative;
+  vertical-align: middle;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: none;
+  padding: 0.92857143em 1.14285714em;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: normal;
+  -webkit-transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
+  transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
+}
+
+.ui.menu > .item:first-child {
+  border-radius: 0.28571429rem 0px 0px 0.28571429rem;
+}
+
+/* Border */
+
+.ui.menu .item:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  right: 0px;
+  height: 100%;
+  width: 1px;
+  background: rgba(34, 36, 38, 0.1);
+}
+
+/*--------------
+  Text Content
+---------------*/
+
+.ui.menu .text.item > *,
+.ui.menu .item > a:not(.ui),
+.ui.menu .item > p:only-child {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  line-height: 1.3;
+}
+
+.ui.menu .item > p:first-child {
+  margin-top: 0;
+}
+
+.ui.menu .item > p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------
+      Icons
+---------------*/
+
+.ui.menu .item > i.icon {
+  opacity: 0.9;
+  float: none;
+  margin: 0em 0.35714286em 0em 0em;
+}
+
+/*--------------
+     Button
+---------------*/
+
+.ui.menu:not(.vertical) .item > .button {
+  position: relative;
+  top: 0em;
+  margin: -0.5em 0em;
+  padding-bottom: 0.71428571em;
+  padding-top: 0.71428571em;
+  font-size: 1em;
+}
+
+/*----------------
+ Grid / Container
+-----------------*/
+
+.ui.menu > .grid,
+.ui.menu > .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: inherit;
+  -webkit-align-items: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: inherit;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+}
+
+/*--------------
+     Inputs
+---------------*/
+
+.ui.menu .item > .input {
+  width: 100%;
+}
+
+.ui.menu:not(.vertical) .item > .input {
+  position: relative;
+  top: 0em;
+  margin: -0.5em 0em;
+}
+
+.ui.menu .item > .input input {
+  font-size: 1em;
+  padding-top: 0.57142857em;
+  padding-bottom: 0.57142857em;
+}
+
+.ui.menu .item > .input .button,
+.ui.menu .item > .input .label {
+  padding-top: 0.57142857em;
+  padding-bottom: 0.57142857em;
+}
+
+/*--------------
+     Header
+---------------*/
+
+.ui.menu .header.item,
+.ui.vertical.menu .header.item {
+  margin: 0em;
+  background: '';
+  text-transform: normal;
+  font-weight: bold;
+}
+
+.ui.vertical.menu .item > .header:not(.ui) {
+  margin: 0em 0em 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*--------------
+     Popup
+---------------*/
+
+.ui.menu .ui.popup {
+  display: none;
+}
+
+.ui.menu .ui.visible.popup {
+  display: block;
+}
+
+/*--------------
+    Dropdowns
+---------------*/
+
+/* Dropdown Icon */
+
+.ui.menu .item > i.dropdown.icon {
+  padding: 0em;
+  float: right;
+  margin: 0em 0em 0em 1em;
+}
+
+/* Menu */
+
+.ui.menu .dropdown.item .menu {
+  left: 0px;
+  min-width: calc(100% - 1px);
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+  background: #ffffff;
+  margin: 0em 0px 0px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* Menu Items */
+
+.ui.menu .ui.dropdown .menu > .item {
+  margin: 0;
+  font-size: 1em !important;
+  padding: 0.71428571em 1.14285714em !important;
+  background: transparent !important;
+  color: rgba(0, 0, 0, 0.87) !important;
+  text-transform: none !important;
+  font-weight: normal !important;
+  box-shadow: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.ui.menu .ui.dropdown .menu > .item:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.ui.menu .ui.dropdown .menu > .selected.item {
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.ui.menu .ui.dropdown .menu > .active.item {
+  background: rgba(0, 0, 0, 0.03) !important;
+  font-weight: bold !important;
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+  display: block;
+}
+
+.ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown) {
+  display: inline-block;
+  font-size: 1em !important;
+  float: none;
+  margin: 0em 0.75em 0em 0em;
+}
+
+/* Secondary */
+
+.ui.secondary.menu .dropdown.item > .menu,
+.ui.text.menu .dropdown.item > .menu {
+  border-radius: 0.28571429rem;
+  margin-top: 0.35714286em;
+}
+
+/* Pointing */
+
+.ui.menu .pointing.dropdown.item .menu {
+  margin-top: 0.75em;
+}
+
+/* Inverted */
+
+.ui.inverted.menu .search.dropdown.item > .search,
+.ui.inverted.menu .search.dropdown.item > .text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Vertical */
+
+.ui.vertical.menu .dropdown.item > .icon {
+  float: right;
+  content: "\f0da";
+  margin-left: 1em;
+}
+
+.ui.vertical.menu .dropdown.item .menu {
+  top: 0% !important;
+  left: 100%;
+  min-width: 0;
+  margin: 0em 0em 0em 0em;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 0em 0.28571429rem 0.28571429rem 0.28571429rem;
+}
+
+.ui.vertical.menu .active.dropdown.item {
+  border-top-right-radius: 0em;
+  border-bottom-right-radius: 0em;
+}
+
+.ui.vertical.menu .dropdown.active.item {
+  box-shadow: none;
+}
+
+/* Evenly Divided */
+
+.ui.item.menu .dropdown .menu .item {
+  width: 100%;
+}
+
+/*--------------
+     Labels
+---------------*/
+
+.ui.menu .item > .label {
+  background: #999999;
+  color: #ffffff;
+  margin-left: 1em;
+  padding: 0.3em 0.71428571em;
+}
+
+.ui.vertical.menu .item > .label {
+  background: #999999;
+  color: #ffffff;
+  margin-top: -0.15em;
+  margin-bottom: -0.15em;
+  padding: 0.3em 0.71428571em;
+}
+
+.ui.menu .item > .label:before {
+  background-color: #999999;
+}
+
+.ui.menu .item > .floating.label {
+  padding: 0.3em 0.71428571em;
+}
+
+/*--------------
+     Images
+---------------*/
+
+.ui.menu .item > img:not(.ui) {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.3em 0em;
+  width: 2.5em;
+}
+
+.ui.vertical.menu .item > img:not(.ui):only-child {
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+
+/*******************************
+          Coupling
+*******************************/
+
+/*--------------
+     Sidebar
+---------------*/
+
+/* Show vertical dividers below last */
+
+.ui.vertical.sidebar.menu > .item:first-child:before {
+  display: block !important;
+}
+
+.ui.vertical.sidebar.menu > .item::before {
+  top: auto;
+  bottom: 0px;
+}
+
+/*--------------
+    Container
+---------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.menu > .ui.container {
+    width: 100%;
+    margin-left: 0em !important;
+    margin-right: 0em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) > .container > .item:not(.right):not(.borderless):first-child {
+    border-left: 1px solid rgba(34, 36, 38, 0.1);
+  }
+}
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+      Hover
+---------------*/
+
+.ui.link.menu .item:hover,
+.ui.menu .dropdown.item:hover,
+.ui.menu .link.item:hover,
+.ui.menu a.item:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/*--------------
+     Pressed
+---------------*/
+
+.ui.link.menu .item:active,
+.ui.menu .link.item:active,
+.ui.menu a.item:active {
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/*--------------
+     Active
+---------------*/
+
+.ui.menu .active.item {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: normal;
+  box-shadow: none;
+}
+
+.ui.menu .active.item > i.icon {
+  opacity: 1;
+}
+
+/*--------------
+  Active Hover
+---------------*/
+
+.ui.menu .active.item:hover,
+.ui.vertical.menu .active.item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/*--------------
+     Disabled
+---------------*/
+
+.ui.menu .item.disabled,
+.ui.menu .item.disabled:hover {
+  cursor: default;
+  background-color: transparent !important;
+  color: rgba(40, 40, 40, 0.3);
+}
+
+/*******************************
+             Types
+*******************************/
+
+/*------------------
+Floated Menu / Item
+-------------------*/
+
+/* Left Floated */
+
+.ui.menu:not(.vertical) .left.item,
+.ui.menu:not(.vertical) .left.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto !important;
+}
+
+/* Right Floated */
+
+.ui.menu:not(.vertical) .right.item,
+.ui.menu:not(.vertical) .right.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto !important;
+}
+
+/* Swapped Borders */
+
+.ui.menu .right.item::before,
+.ui.menu .right.menu > .item::before {
+  right: auto;
+  left: 0;
+}
+
+/*--------------
+    Vertical
+---------------*/
+
+.ui.vertical.menu {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+
+/*--- Item ---*/
+
+.ui.vertical.menu .item {
+  display: block;
+  background: none;
+  border-top: none;
+  border-right: none;
+}
+
+.ui.vertical.menu > .item:first-child {
+  border-radius: 0.28571429rem 0.28571429rem 0px 0px;
+}
+
+.ui.vertical.menu > .item:last-child {
+  border-radius: 0px 0px 0.28571429rem 0.28571429rem;
+}
+
+/*--- Label ---*/
+
+.ui.vertical.menu .item > .label {
+  float: right;
+  text-align: center;
+}
+
+/*--- Icon ---*/
+
+.ui.vertical.menu .item > i.icon {
+  width: 1.18em;
+  float: right;
+  margin: 0em 0em 0em 0.5em;
+}
+
+.ui.vertical.menu .item > .label + i.icon {
+  float: none;
+  margin: 0em 0.5em 0em 0em;
+}
+
+/*--- Border ---*/
+
+.ui.vertical.menu .item:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0px;
+  width: 100%;
+  background: rgba(34, 36, 38, 0.1);
+  height: 1px;
+}
+
+.ui.vertical.menu .item:first-child:before {
+  display: none !important;
+}
+
+/*--- Sub Menu ---*/
+
+.ui.vertical.menu .item > .menu {
+  margin: 0.5em -1.14285714em 0em;
+}
+
+.ui.vertical.menu .menu .item {
+  background: none;
+  padding: 0.5em 1.33333333em;
+  font-size: 0.85714286em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ui.vertical.menu .item .menu a.item:hover,
+.ui.vertical.menu .item .menu .link.item:hover {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.ui.vertical.menu .menu .item:before {
+  display: none;
+}
+
+/* Vertical Active */
+
+.ui.vertical.menu .active.item {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0em;
+  box-shadow: none;
+}
+
+.ui.vertical.menu > .active.item:first-child {
+  border-radius: 0em 0.28571429rem 0em 0em;
+}
+
+.ui.vertical.menu > .active.item:last-child {
+  border-radius: 0em 0em 0.28571429rem 0em;
+}
+
+.ui.vertical.menu > .active.item:only-child {
+  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+}
+
+.ui.vertical.menu .active.item .menu .active.item {
+  border-left: none;
+}
+
+.ui.vertical.menu .item .menu .active.item {
+  background-color: transparent;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/*--------------
+     Tabular
+---------------*/
+
+.ui.tabular.menu {
+  background-color: transparent;
+  border-radius: 0em;
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 1px solid #d4d4d5;
+}
+
+.ui.tabular.fluid.menu {
+  width: calc(100% +  2px ) !important;
+}
+
+.ui.tabular.menu .item {
+  background-color: transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 2px solid transparent;
+  border-bottom: none;
+  padding-left: 1.42857143em;
+  padding-right: 1.42857143em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.ui.tabular.menu .item:before {
+  display: none;
+}
+
+/* Hover */
+
+.ui.tabular.menu .item:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Active */
+
+.ui.tabular.menu .active.item {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.95);
+  border-top-width: 1px;
+  border-color: #d4d4d5;
+  font-weight: bold;
+  margin-bottom: -1px;
+  box-shadow: none;
+  border-radius: 0.28571429rem 0.28571429rem 0px 0px !important;
+}
+
+/* Coupling with segment for attachment */
+
+.ui.tabular.menu + .bottom.attached.segment,
+.ui.tabular.menu ~ .bottom.attached.segment + .bottom.attached.segment {
+  border-top: none;
+  margin: 0px;
+  width: 100%;
+}
+
+/* Vertical Tabular */
+
+.ui.vertical.tabular.menu {
+  background-color: transparent;
+  border-radius: 0em;
+  box-shadow: none !important;
+  border-bottom: none;
+  border-right: 1px solid #d4d4d5;
+}
+
+.ui.vertical.tabular.menu .item {
+  background: none;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-right: none;
+}
+
+/* Active */
+
+.ui.vertical.tabular.menu .active.item {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.95);
+  border-color: #d4d4d5;
+  margin: 0px -1px 0px 0px;
+  border-radius: 0.28571429rem 0px 0px 0.28571429rem !important;
+}
+
+/* Dropdown */
+
+.ui.tabular.menu .active.dropdown.item {
+  margin-bottom: 0px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 2px solid transparent;
+  border-bottom: none;
+}
+
+/*--------------
+   Pagination
+---------------*/
+
+.ui.pagination.menu {
+  margin: 0em;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.ui.pagination.menu .item:last-child {
+  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+}
+
+.ui.compact.menu .item:last-child {
+  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+}
+
+.ui.pagination.menu .item:last-child:before {
+  display: none;
+}
+
+.ui.pagination.menu .item {
+  min-width: 3em;
+  text-align: center;
+}
+
+.ui.pagination.menu .icon.item i.icon {
+  vertical-align: top;
+}
+
+/* Active */
+
+.ui.pagination.menu .active.item {
+  border-top: none;
+  padding-top: 0.92857143em;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: none;
+}
+
+/*--------------
+   Secondary
+---------------*/
+
+.ui.secondary.menu {
+  background: none;
+  margin-left: -0.35714286em;
+  margin-right: -0.35714286em;
+  border-radius: 0em;
+  border: none;
+  box-shadow: none;
+}
+
+/* Item */
+
+.ui.secondary.menu .item {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-shadow: none;
+  border: none;
+  padding: 0.71428571em 0.92857143em;
+  margin: 0em 0.35714286em;
+  background: none;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+  border-radius: 0.28571429rem;
+}
+
+/* No Divider */
+
+.ui.secondary.menu .item:before {
+  display: none !important;
+}
+
+/* Header */
+
+.ui.secondary.menu .header.item {
+  border-radius: 0em;
+  border-right: 1px solid rgba(34, 36, 38, 0.15);
+  background: none transparent;
+}
+
+/* Image */
+
+.ui.secondary.menu .item > img:not(.ui) {
+  margin: 0em;
+}
+
+/* Hover */
+
+.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .link.item:hover,
+.ui.secondary.menu a.item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Active */
+
+.ui.secondary.menu .active.item {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+  border-radius: 0.28571429rem;
+}
+
+/* Active Hover */
+
+.ui.secondary.menu .active.item:hover {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Inverted */
+
+.ui.secondary.inverted.menu .link.item,
+.ui.secondary.inverted.menu a.item {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.ui.secondary.inverted.menu .dropdown.item:hover,
+.ui.secondary.inverted.menu .link.item:hover,
+.ui.secondary.inverted.menu a.item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff !important;
+}
+
+.ui.secondary.inverted.menu .active.item {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+}
+
+/* Fix item margins */
+
+.ui.secondary.item.menu {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+.ui.secondary.item.menu .item:last-child {
+  margin-right: 0em;
+}
+
+.ui.secondary.attached.menu {
+  box-shadow: none;
+}
+
+/*---------------------
+   Secondary Vertical
+-----------------------*/
+
+.ui.secondary.vertical.menu > .item {
+  border: none;
+  margin: 0em 0em 0.35714286em;
+  border-radius: 0.28571429rem !important;
+}
+
+.ui.secondary.vertical.menu > .header.item {
+  border-radius: 0em;
+}
+
+/* Sub Menu */
+
+.ui.vertical.secondary.menu .item > .menu .item {
+  background-color: transparent;
+}
+
+/* Inverted */
+
+.ui.secondary.inverted.menu {
+  background-color: transparent;
+}
+
+/*---------------------
+   Secondary Pointing
+-----------------------*/
+
+.ui.secondary.pointing.menu {
+  margin-left: 0em;
+  margin-right: 0em;
+  border-bottom: 2px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.secondary.pointing.menu .item {
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-radius: 0em;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin: 0em 0em -2px;
+  padding: 0.85714286em 1.14285714em;
+  border-bottom-width: 2px;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+/* Item Types */
+
+.ui.secondary.pointing.menu .header.item {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.ui.secondary.pointing.menu .text.item {
+  box-shadow: none !important;
+}
+
+.ui.secondary.pointing.menu .item:after {
+  display: none;
+}
+
+/* Hover */
+
+.ui.secondary.pointing.menu .dropdown.item:hover,
+.ui.secondary.pointing.menu .link.item:hover,
+.ui.secondary.pointing.menu a.item:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Pressed */
+
+.ui.secondary.pointing.menu .dropdown.item:active,
+.ui.secondary.pointing.menu .link.item:active,
+.ui.secondary.pointing.menu a.item:active {
+  background-color: transparent;
+  border-color: rgba(34, 36, 38, 0.15);
+}
+
+/* Active */
+
+.ui.secondary.pointing.menu .active.item {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #1b1c1d;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Active Hover */
+
+.ui.secondary.pointing.menu .active.item:hover {
+  border-color: #1b1c1d;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Active Dropdown */
+
+.ui.secondary.pointing.menu .active.dropdown.item {
+  border-color: transparent;
+}
+
+/* Vertical Pointing */
+
+.ui.secondary.vertical.pointing.menu {
+  border-bottom-width: 0px;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: rgba(34, 36, 38, 0.15);
+}
+
+.ui.secondary.vertical.pointing.menu .item {
+  border-bottom: none;
+  border-right-style: solid;
+  border-right-color: transparent;
+  border-radius: 0em !important;
+  margin: 0em -2px 0em 0em;
+  border-right-width: 2px;
+}
+
+/* Vertical Active */
+
+.ui.secondary.vertical.pointing.menu .active.item {
+  border-color: #1b1c1d;
+}
+
+/* Inverted */
+
+.ui.secondary.inverted.pointing.menu {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ui.secondary.inverted.pointing.menu {
+  border-width: 2px;
+  border-color: rgba(34, 36, 38, 0.15);
+}
+
+.ui.secondary.inverted.pointing.menu .item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ui.secondary.inverted.pointing.menu .header.item {
+  color: #ffffff !important;
+}
+
+/* Hover */
+
+.ui.secondary.inverted.pointing.menu .item:hover {
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Active */
+
+.ui.secondary.inverted.pointing.menu .active.item {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/*--------------
+    Text Menu
+---------------*/
+
+.ui.text.menu {
+  background: none transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  margin: 1.14285714em -0.5em;
+}
+
+.ui.text.menu .item {
+  padding: 0em;
+  border-radius: 0px;
+  box-shadow: none;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0em 0.5em;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+
+/* Sub Menu */
+
+.ui.vertical.text.menu > .menu {
+  margin: 0em;
+}
+
+/* Border */
+
+.ui.text.menu .item:before,
+.ui.text.menu .menu .item:before {
+  display: none !important;
+}
+
+/* Header */
+
+.ui.text.menu .header.item {
+  background-color: transparent;
+  padding: 0em;
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 0.92857143em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Image */
+
+.ui.text.menu .item > img:not(.ui) {
+  margin: 0em;
+}
+
+/*--- fluid text ---*/
+
+.ui.text.item.menu .item {
+  margin: 0em;
+}
+
+/*--- vertical text ---*/
+
+.ui.vertical.text.menu {
+  margin: 1em 0em;
+}
+
+.ui.vertical.text.menu:first-child {
+  margin-top: 0rem;
+}
+
+.ui.vertical.text.menu:last-child {
+  margin-bottom: 0rem;
+}
+
+.ui.vertical.text.menu .item {
+  margin: 0.57142857em 0em;
+}
+
+.ui.vertical.text.menu .item > i.icon {
+  float: none;
+  margin: 0em 0.35714286em 0em 0em;
+}
+
+.ui.vertical.text.menu .header.item {
+  margin: 0.57142857em 0em 0.71428571em;
+}
+
+/*--- hover ---*/
+
+.ui.text.menu .item:hover {
+  opacity: 1;
+  background-color: transparent;
+}
+
+/*--- active ---*/
+
+.ui.text.menu .active.item {
+  background-color: transparent;
+  padding: 0em;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/*--- active hover ---*/
+
+.ui.text.menu .active.item:hover {
+  background-color: transparent;
+}
+
+/* Disable Bariations */
+
+.ui.text.pointing.menu .active.item:after {
+  box-shadow: none;
+}
+
+.ui.text.attached.menu {
+  box-shadow: none;
+}
+
+/* Inverted */
+
+.ui.inverted.text.menu,
+.ui.inverted.text.menu .item,
+.ui.inverted.text.menu .item:hover,
+.ui.inverted.text.menu .active.item {
+  background-color: transparent !important;
+}
+
+/* Fluid */
+
+.ui.fluid.text.menu {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+/*--------------
+    Icon Only
+---------------*/
+
+.ui.icon.menu .item {
+  height: auto;
+  text-align: center;
+  color: #1b1c1d;
+}
+
+.ui.icon.menu .item > .icon {
+  margin: 0em;
+  opacity: 1;
+}
+
+.ui.vertical.icon.menu .item > .icon:not(.dropdown) {
+  display: block;
+  margin: 0em auto;
+  float: none;
+}
+
+.ui.icon.menu .icon:before {
+  opacity: 1;
+}
+
+/* Item Icon Only */
+
+.ui.menu .icon.item > .icon {
+  width: auto;
+  margin: 0em auto;
+}
+
+/* Vertical */
+
+.ui.vertical.icon.menu {
+  width: auto;
+}
+
+/* Inverted */
+
+.ui.inverted.icon.menu .item {
+  color: #ffffff;
+}
+
+/*--------------
+   Labeled Icon
+---------------*/
+
+.ui.labeled.icon.menu {
+  text-align: center;
+}
+
+.ui.fluid.labeled.icon.menu .item {
+  min-width: 0em;
+}
+
+.ui.labeled.icon.menu .item {
+  min-width: 6em;
+}
+
+.ui.labeled.icon.menu:not(.vertical) .item {
+  padding-left: 1.71428571em;
+  padding-right: 1.71428571em;
+}
+
+.ui.labeled.icon.menu .item > .icon:not(.dropdown) {
+  height: 1em;
+  display: block;
+  font-size: 1.42857143em !important;
+  margin: 0em 0.5rem 0em 0em !important;
+}
+
+.ui.vertical.labeled.icon.menu .item > .icon:not(.dropdown) {
+  margin: 0em auto 0.5rem !important;
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+    Stackable
+---------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .ui.stackable.menu .item {
+    width: 100% !important;
+  }
+
+  .ui.stackable.menu .item:before {
+    position: absolute;
+    content: '';
+    top: auto;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(34, 36, 38, 0.1);
+    height: 1px;
+  }
+}
+
+/*--------------
+     Colors
+---------------*/
+
+/*--- Standard Colors  ---*/
+
+.ui.menu .red.active.item,
+.ui.red.menu .active.item {
+  border-color: #db2828 !important;
+  color: #db2828 !important;
+}
+
+.ui.menu .orange.active.item,
+.ui.orange.menu .active.item {
+  border-color: #f2711c !important;
+  color: #f2711c !important;
+}
+
+.ui.menu .yellow.active.item,
+.ui.yellow.menu .active.item {
+  border-color: #fbbd08 !important;
+  color: #fbbd08 !important;
+}
+
+.ui.menu .olive.active.item,
+.ui.olive.menu .active.item {
+  border-color: #b5cc18 !important;
+  color: #b5cc18 !important;
+}
+
+.ui.menu .green.active.item,
+.ui.green.menu .active.item {
+  border-color: #21ba45 !important;
+  color: #21ba45 !important;
+}
+
+.ui.menu .teal.active.item,
+.ui.teal.menu .active.item {
+  border-color: #00b5ad !important;
+  color: #00b5ad !important;
+}
+
+.ui.menu .blue.active.item,
+.ui.blue.menu .active.item {
+  border-color: #2185d0 !important;
+  color: #2185d0 !important;
+}
+
+.ui.menu .violet.active.item,
+.ui.violet.menu .active.item {
+  border-color: #6435c9 !important;
+  color: #6435c9 !important;
+}
+
+.ui.menu .purple.active.item,
+.ui.purple.menu .active.item {
+  border-color: #a333c8 !important;
+  color: #a333c8 !important;
+}
+
+.ui.menu .pink.active.item,
+.ui.pink.menu .active.item {
+  border-color: #e03997 !important;
+  color: #e03997 !important;
+}
+
+.ui.menu .brown.active.item,
+.ui.brown.menu .active.item {
+  border-color: #a5673f !important;
+  color: #a5673f !important;
+}
+
+.ui.menu .grey.active.item,
+.ui.grey.menu .active.item {
+  border-color: #767676 !important;
+  color: #767676 !important;
+}
+
+/*--------------
+    Inverted
+---------------*/
+
+.ui.inverted.menu {
+  border: 0px solid transparent;
+  background: #1b1c1d;
+  box-shadow: none;
+}
+
+/* Menu Item */
+
+.ui.inverted.menu .item,
+.ui.inverted.menu .item > a:not(.ui) {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ui.inverted.menu .item.menu {
+  background: transparent;
+}
+
+/*--- Border ---*/
+
+.ui.inverted.menu .item:before {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ui.vertical.inverted.menu .item:before {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Sub Menu */
+
+.ui.vertical.inverted.menu .menu .item,
+.ui.vertical.inverted.menu .menu .item a:not(.ui) {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Header */
+
+.ui.inverted.menu .header.item {
+  margin: 0em;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Disabled */
+
+.ui.inverted.menu .item.disabled,
+.ui.inverted.menu .item.disabled:hover {
+  color: rgba(225, 225, 225, 0.3);
+}
+
+/*--- Hover ---*/
+
+.ui.link.inverted.menu .item:hover,
+.ui.inverted.menu .dropdown.item:hover,
+.ui.inverted.menu .link.item:hover,
+.ui.inverted.menu a.item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.ui.vertical.inverted.menu .item .menu a.item:hover,
+.ui.vertical.inverted.menu .item .menu .link.item:hover {
+  background: transparent;
+  color: #ffffff;
+}
+
+/*--- Pressed ---*/
+
+.ui.inverted.menu a.item:active,
+.ui.inverted.menu .link.item:active,
+.ui.inverted.menu a.item:active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/*--- Active ---*/
+
+.ui.inverted.menu .active.item {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+}
+
+.ui.inverted.vertical.menu .item .menu .active.item {
+  background: transparent;
+  color: #ffffff;
+}
+
+.ui.inverted.pointing.menu .active.item:after {
+  background: #3d3e3f !important;
+  margin: 0em !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/*--- Active Hover ---*/
+
+.ui.inverted.menu .active.item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+}
+
+.ui.inverted.pointing.menu .active.item:hover:after {
+  background: #3d3e3f !important;
+}
+
+/*--------------
+     Floated
+---------------*/
+
+.ui.floated.menu {
+  float: left;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.ui.floated.menu .item:last-child:before {
+  display: none;
+}
+
+.ui.right.floated.menu {
+  float: right;
+  margin: 0rem 0rem 0rem 0.5rem;
+}
+
+/*--------------
+    Inverted
+---------------*/
+
+/* Red */
+
+.ui.inverted.red.menu {
+  background-color: #db2828;
+}
+
+.ui.inverted.red.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.red.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Orange */
+
+.ui.inverted.orange.menu {
+  background-color: #f2711c;
+}
+
+.ui.inverted.orange.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.orange.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Yellow */
+
+.ui.inverted.yellow.menu {
+  background-color: #fbbd08;
+}
+
+.ui.inverted.yellow.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.yellow.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Olive */
+
+.ui.inverted.olive.menu {
+  background-color: #b5cc18;
+}
+
+.ui.inverted.olive.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.olive.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Green */
+
+.ui.inverted.green.menu {
+  background-color: #21ba45;
+}
+
+.ui.inverted.green.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.green.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Teal */
+
+.ui.inverted.teal.menu {
+  background-color: #00b5ad;
+}
+
+.ui.inverted.teal.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.teal.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Blue */
+
+.ui.inverted.blue.menu {
+  background-color: #2185d0;
+}
+
+.ui.inverted.blue.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.blue.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Violet */
+
+.ui.inverted.violet.menu {
+  background-color: #6435c9;
+}
+
+.ui.inverted.violet.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.violet.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Purple */
+
+.ui.inverted.purple.menu {
+  background-color: #a333c8;
+}
+
+.ui.inverted.purple.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.purple.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Pink */
+
+.ui.inverted.pink.menu {
+  background-color: #e03997;
+}
+
+.ui.inverted.pink.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.pink.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Brown */
+
+.ui.inverted.brown.menu {
+  background-color: #a5673f;
+}
+
+.ui.inverted.brown.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.brown.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Grey */
+
+.ui.inverted.grey.menu {
+  background-color: #767676;
+}
+
+.ui.inverted.grey.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.grey.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/*--------------
+     Fitted
+---------------*/
+
+.ui.fitted.menu .item,
+.ui.fitted.menu .item .menu .item,
+.ui.menu .fitted.item {
+  padding: 0em;
+}
+
+.ui.horizontally.fitted.menu .item,
+.ui.horizontally.fitted.menu .item .menu .item,
+.ui.menu .horizontally.fitted.item {
+  padding-top: 0.92857143em;
+  padding-bottom: 0.92857143em;
+}
+
+.ui.vertically.fitted.menu .item,
+.ui.vertically.fitted.menu .item .menu .item,
+.ui.menu .vertically.fitted.item {
+  padding-left: 1.14285714em;
+  padding-right: 1.14285714em;
+}
+
+/*--------------
+   Borderless
+---------------*/
+
+.ui.borderless.menu .item:before,
+.ui.borderless.menu .item .menu .item:before,
+.ui.menu .borderless.item:before {
+  background: none !important;
+}
+
+/*-------------------
+       Compact
+--------------------*/
+
+.ui.compact.menu {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0em;
+  vertical-align: middle;
+}
+
+.ui.compact.vertical.menu {
+  display: inline-block;
+}
+
+.ui.compact.menu .item:last-child {
+  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+}
+
+.ui.compact.menu .item:last-child:before {
+  display: none;
+}
+
+.ui.compact.vertical.menu {
+  width: auto !important;
+}
+
+.ui.compact.vertical.menu .item:last-child::before {
+  display: block;
+}
+
+/*-------------------
+        Fluid
+--------------------*/
+
+.ui.menu.fluid,
+.ui.vertical.menu.fluid {
+  width: 100% !important;
+}
+
+/*-------------------
+      Evenly Sized
+--------------------*/
+
+.ui.item.menu,
+.ui.item.menu .item {
+  width: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ui.item.menu .item:last-child:before {
+  display: none;
+}
+
+.ui.menu.two.item .item {
+  width: 50%;
+}
+
+.ui.menu.three.item .item {
+  width: 33.333%;
+}
+
+.ui.menu.four.item .item {
+  width: 25%;
+}
+
+.ui.menu.five.item .item {
+  width: 20%;
+}
+
+.ui.menu.six.item .item {
+  width: 16.666%;
+}
+
+.ui.menu.seven.item .item {
+  width: 14.285%;
+}
+
+.ui.menu.eight.item .item {
+  width: 12.500%;
+}
+
+.ui.menu.nine.item .item {
+  width: 11.11%;
+}
+
+.ui.menu.ten.item .item {
+  width: 10.0%;
+}
+
+.ui.menu.eleven.item .item {
+  width: 9.09%;
+}
+
+.ui.menu.twelve.item .item {
+  width: 8.333%;
+}
+
+/*--------------
+     Fixed
+---------------*/
+
+.ui.menu.fixed {
+  position: fixed;
+  z-index: 101;
+  margin: 0em;
+  width: 100%;
+}
+
+.ui.menu.fixed,
+.ui.menu.fixed .item:first-child,
+.ui.menu.fixed .item:last-child {
+  border-radius: 0px !important;
+}
+
+.ui.fixed.menu,
+.ui[class*="top fixed"].menu {
+  top: 0px;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+}
+
+.ui[class*="top fixed"].menu {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.ui[class*="right fixed"].menu {
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  top: 0px;
+  right: 0px;
+  left: auto;
+  bottom: auto;
+  width: auto;
+  height: 100%;
+}
+
+.ui[class*="bottom fixed"].menu {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  bottom: 0px;
+  left: 0px;
+  top: auto;
+  right: auto;
+}
+
+.ui[class*="left fixed"].menu {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  top: 0px;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+  width: auto;
+  height: 100%;
+}
+
+/* Coupling with Grid */
+
+.ui.fixed.menu + .ui.grid {
+  padding-top: 2.75rem;
+}
+
+/*-------------------
+       Pointing
+--------------------*/
+
+.ui.pointing.menu .item:after {
+  visibility: hidden;
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  background: none;
+  margin: 0.5px 0em 0em;
+  width: 0.57142857em;
+  height: 0.57142857em;
+  border: none;
+  border-bottom: 1px solid #d4d4d5;
+  border-right: 1px solid #d4d4d5;
+  z-index: 2;
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+}
+
+.ui.vertical.pointing.menu .item:after {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  bottom: auto;
+  left: auto;
+  -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+  margin: 0em -0.5px 0em 0em;
+  border: none;
+  border-top: 1px solid #d4d4d5;
+  border-right: 1px solid #d4d4d5;
+}
+
+/* Active */
+
+.ui.pointing.menu .active.item:after {
+  visibility: visible;
+}
+
+.ui.pointing.menu .active.dropdown.item:after {
+  visibility: hidden;
+}
+
+/* Don't double up pointers */
+
+.ui.pointing.menu .dropdown.active.item:after,
+.ui.pointing.menu .active.item .menu .active.item:after {
+  display: none;
+}
+
+/* Colors */
+
+.ui.pointing.menu .active.item:hover:after {
+  background-color: #f2f2f2;
+}
+
+.ui.pointing.menu .active.item:after {
+  background-color: #f2f2f2;
+}
+
+.ui.pointing.menu .active.item:hover:after {
+  background-color: #f2f2f2;
+}
+
+.ui.vertical.pointing.menu .active.item:hover:after {
+  background-color: #f2f2f2;
+}
+
+.ui.vertical.pointing.menu .active.item:after {
+  background-color: #f2f2f2;
+}
+
+.ui.vertical.pointing.menu .menu .active.item:after {
+  background-color: #ffffff;
+}
+
+/*--------------
+    Attached
+---------------*/
+
+.ui.attached.menu {
+  border-radius: 0px;
+  margin-left: -1px;
+  margin-right: -1px;
+  width: calc(100% +  2px );
+  box-shadow: none;
+  /* avoid rgba multiplying */
+}
+
+/* Direction */
+
+.ui.attached.menu:not(.top):not(.bottom) {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.ui.top.attached.menu {
+  margin-bottom: 0em;
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+
+.ui.top.attached.menu > .item:first-child {
+  border-radius: 0.28571429rem 0em 0em 0em;
+}
+
+.ui.bottom.attached.menu {
+  margin-top: 0em;
+  border-top: none;
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+}
+
+.ui.bottom.attached.menu > .item:first-child {
+  border-radius: 0em 0em 0em 0.28571429rem;
+}
+
+/* Tabular Attached */
+
+.ui.top.attached.menu:not(.fixed):not(.tabular) {
+  border-bottom: none;
+}
+
+.ui.attached.tabular.menu {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+/* Small */
+
+.ui.small.menu {
+  font-size: 0.92857143rem;
+}
+
+.ui.small.vertical.menu {
+  width: 13rem;
+}
+
+/* Medium */
+
+.ui.menu {
+  font-size: 1rem;
+}
+
+.ui.vertical.menu {
+  width: 15rem;
+}
+
+/* Large */
+
+.ui.large.menu {
+  font-size: 1.14285714rem;
+}
+
+.ui.large.vertical.menu {
+  width: 18rem;
+}
+
+/* Huge */
+
+.ui.huge.menu {
+  font-size: 1.42857143rem;
+}
+
+.ui.huge.vertical.menu {
+  width: 20rem;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/

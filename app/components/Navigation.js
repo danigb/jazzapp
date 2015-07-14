@@ -1,16 +1,17 @@
 import React from 'react'
 import { Route, RouteHandler } from 'react-router'
-import route from '../router.js'
+import Router from '../router.js'
 
 let Navigation = React.createClass({
+  mixins: [Router],
   render () {
     let root = this.props.root
     return (
       <div className='ui inverted fixed menu'>
         <div className='ui container'>
           <div className='header item'>Jazzapp</div>
-          <a href={route(root, 'tonality')} className='item'>Tonality</a>
-          <a href={route(root, 'scales')} className='item'>Scales</a>
+          <a href={this.routeTo(root, 'tonality')} className='item'>Tonality</a>
+          <a href={this.routeTo(root, 'scales')} className='item'>Scales</a>
         </div>
       </div>
     )

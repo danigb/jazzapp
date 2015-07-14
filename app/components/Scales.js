@@ -1,19 +1,20 @@
 import React from 'react'
 import scales from 'musical-scales'
-import route from '../router.js'
+import Router from '../router.js'
 
 const TYPES = ['1-note', 'interval', 'triad', 'cuatriad', 'pentatonic',
 'hexatonic', 'heptatonic', 'octatonic', '9-notes', '10-notes', '11-notes', '12-notes']
 
 let Scales = React.createClass({
+  mixins: [Router],
   render () {
-    let root = this.props.params.root
+    let root = this.getRoot()
     let type = this.props.params.type
     if (!type) return this.renderIndex(root)
     else return this.renderType(root, type)
   }, renderIndex (root) {
     let types = TYPES.map((type) => {
-      let href = '#/' + root + '/scales/' + type
+      let href = this.routeTo('scales', type)
       return <li key={type}><a href={href}>{type} scales</a></li>
     })
     let named = scales.all()
@@ -21,12 +22,10 @@ let Scales = React.createClass({
       .map((scale) => {
         return (
           <li key={scale.decimal}>
-          <a href={route(root, 'scale', scale.names[0])}>{scale.names[0]}</a>
+          <a href={this.routeTo('scale', scale.names[0])}>{scale.names[0]}</a>
           </li>
         )
       })
-    console.log(scales.Names.get(2773))
-    console.log(scales.get(2773).names)
 
     return (
       <div>

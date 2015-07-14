@@ -6,7 +6,7 @@ import Transport from './Transport.js'
 
 let App = React.createClass({
   render () {
-    let root = this.props.params.root
+    let root = this.props.params.root.replace('sharp', '#')
     return (
       <div className='app'>
         <Navigation root={root} />

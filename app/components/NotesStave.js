@@ -6,6 +6,9 @@ let width = 700
 let height = 100
 
 let NotesStave = React.createClass({
+  propTypes: {
+    notes: React.PropTypes.array
+  },
   componentDidMount () {
     this.paint(this.getDOMNode())
   },

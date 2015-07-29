@@ -4,18 +4,22 @@ import classNames from 'classnames'
 
 let View = React.createClass({
   mixins: [Router],
+  propTypes: {
+    root: React.PropTypes.string,
+    name: React.PropTypes.string,
+    binary: React.PropTypes.string
+  },
   render () {
     let root = this.props.root
     let digits = this.props.binary.split('').map((digit) => {
       let classes = classNames('digit', { one: digit === '1'})
       return <div className={classes}>{digit}</div>
     })
-    let name = !this.props.name ? '' :
-      <a href={this.routeTo(root, 'scale', this.props.name)}>{this.props.name}</a>
+    let href = this.routeTo(root, 'scale', this.props.name || this.props.binary)
     return (
-      <div className="binary-scale item">
-        {digits} {name}
-      </div>
+      <a href={href} className='binary-scale item'>
+        {digits} {this.props.name}
+      </a>
     )
   }
 })

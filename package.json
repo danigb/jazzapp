@@ -55,6 +55,7 @@
     "note-parser": "^0.9.0",
     "note-pitch": "^0.6.1",
     "scale-names": "^1.0.0",
-    "scale-spell": "file:../scale-spell"
+    "scale-spell": "file:../scale-spell",
+    "tonal": "file:../tonal"
   }
 }

@@ -1,12 +1,10 @@
 import React from 'react'
 import Tonal from 'tonal'
-import NotesStave from './NotesStave.js'
 import Router from '../router.js'
 
 let Heptatonics = React.createClass({
   mixins: [Router],
   renderMode (binary, scales) {
-    let root = this.getRoot()
     scales = scales.map(function (scale) {
       let spell = scale.spell().map(function (inter) {
         return inter[1]

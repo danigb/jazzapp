@@ -1,5 +1,5 @@
 import React from 'react'
-import { RouteHandler, Navigation, State } from 'react-router'
+import { Navigation, State } from 'react-router'
 
 const NOTES = 'C D E F G A B'.split(' ')
 
@@ -12,7 +12,6 @@ let Transport = React.createClass({
   },
   render () {
     let path = this.getPath()
-    let root = this.props.root
     let notes = NOTES.map((note) => {
       let href = '#/' + note + path.slice(2)
       return <a href={href} className='item' key={note}>{note}</a>

@@ -1,13 +1,12 @@
 let Router = {
-  getRoot() {
-    console.log(this.props)
+  getRoot () {
     return this.props.params.root.replace('sharp', '#')
   },
-  routeTo(root, name, params) {
+  routeTo (root, name, params) {
     let hash = root +  '/' + name
     if (params) hash += '/' + params
     hash = hash.replace(/#/, 'sharp')
-    return '/#' + hash
+    return '#' + hash
   }
 }
 
